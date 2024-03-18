@@ -1,0 +1,16 @@
+.menu-container {
+  background-color: antiquewhite;
+  width: 100vw;
+}
+
+table {
+  width: 100vw;
+}
+
+td {
+  padding: 15px;
+}
+
+.hidden {
+  visibility: hidden;
+}

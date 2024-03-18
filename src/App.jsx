@@ -1,12 +1,11 @@
+import Menu from './components/store_menu/menu'
 import './App.css'
 
-function App() {
+export default function App() {
 
   return (
     <div>
-       <h1>App Initialized</h1>
+       <Menu />
     </div>
   )
 }
-
-export default App
