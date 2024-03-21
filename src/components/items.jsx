@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { allItems } from "./all_items";
-import ToggleSwitch from "./toggleswitch/toggleswitch";
+import ToggleSwitch from "./store_menu/toggleswitch/toggleswitch";
 
-const getItems = (group) => allItems.filter(item => item.group === group);
+const getItems = (category) => allItems.filter(item => item.category === category);
 
-export default function Items({group}) {
-  const [menu, setMenu] = useState({items: getItems(group), updated: false})
+export default function Items({category, focus}) {
+  const [menu, setMenu] = useState({items: getItems(category), updated: false})
 
   const updateStorage = (id, available, global) => {
     if (global) {
@@ -37,7 +37,7 @@ export default function Items({group}) {
     })
 
     return (
-      <>
+      <tbody className={focus === category ? "menu-container" : "hidden"}>
         <tr>
           <td>
             <div>
@@ -45,7 +45,6 @@ export default function Items({group}) {
             </div>
           </td>
 
-          <td></td>
           <td></td>
 
           <td>
@@ -57,11 +56,15 @@ export default function Items({group}) {
 
         {variants.map(variant => (
           <tr key={variant.id} className="menu-item">
-            <td></td>
+            <td>
+              <div className="variant-name">
+                <span>{variant.name}</span>
+              </div>
+            </td>
 
-            <td>{variant.name}</td>
-
-            <td>{variant.price}</td>
+            <td style={{'width': '5vw'}}>
+              <span>{variant.price}</span>
+            </td>
 
             <td>
               <span>
@@ -70,7 +73,7 @@ export default function Items({group}) {
             </td>
           </tr>
         ))}
-      </>
+      </tbody>
     )
   })
 

@@ -1,12 +1,10 @@
-import Items from "./items"
+import Items from "../items"
 
-export default function Menu() {
+export default function Menu({focus}) {
   return (
     <table>
-      <tbody className="menu-container">
-        <Items group='merienda' />
-        <Items group='lunch' />
-      </tbody>
+      <Items category='merienda' focus={focus}/>
+      <Items category='lunch' focus={focus}/>
     </table>
   )
 }

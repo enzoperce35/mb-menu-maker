@@ -1,3 +1,26 @@
+#container {
+  display: grid;
+  grid-template-rows: 25vh auto;
+}
+
+#header {
+  background-color: chocolate;
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+}
+
+#preview {
+  margin:auto;
+}
+
+#scroller {
+  width: 30vw;
+  font-size: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  margin:auto;
+}
+
 .menu-container {
   background-color: antiquewhite;
   width: 100vw;
@@ -9,6 +32,10 @@ table {
 
 td {
   padding: 15px;
+}
+
+.variant-name {
+  margin-left: 5vw;
 }
 
 .hidden {
