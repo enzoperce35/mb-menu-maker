@@ -3,8 +3,9 @@ import Items from "../items"
 export default function Menu({focus}) {
   return (
     <table>
-      <Items category='merienda' focus={focus}/>
-      <Items category='lunch' focus={focus}/>
+      <Items group={1} focus={focus}/>
+      <Items group={2} focus={focus}/>
+      <Items group={3} focus={focus}/>
     </table>
   )
 }

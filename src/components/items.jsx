@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { allItems } from "./all_items";
 import ToggleSwitch from "./store_menu/toggleswitch/toggleswitch";
 
-const getItems = (category) => allItems.filter(item => item.category === category);
+const getItems = (group) => allItems.filter(item => item.group === group);
 
-export default function Items({category, focus}) {
-  const [menu, setMenu] = useState({items: getItems(category), updated: false})
+export default function Items({group, focus}) {
+  const [menu, setMenu] = useState({items: getItems(group), updated: false})
 
   const updateStorage = (id, available, global) => {
     if (global) {
@@ -37,8 +37,8 @@ export default function Items({category, focus}) {
     })
 
     return (
-      <tbody className={focus === category ? "menu-container" : "hidden"}>
-        <tr>
+      <tbody className={focus === group ? "menu-container" : "hidden"}>
+        <tr className={(variants.length < 2) ? "hidden" : "menu-item"}>
           <td>
             <div>
               {item.name}
@@ -55,9 +55,9 @@ export default function Items({category, focus}) {
         </tr>
 
         {variants.map(variant => (
-          <tr key={variant.id} className="menu-item">
+          <tr key={variant.id} className={"menu-item"}>
             <td>
-              <div className="variant-name">
+              <div className={(variants.length < 2) ? "solo-variant" : "variant-name"}>
                 <span>{variant.name}</span>
               </div>
             </td>

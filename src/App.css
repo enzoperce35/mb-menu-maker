@@ -9,7 +9,7 @@
   grid-template-columns: repeat(2 1fr);
 }
 
-#preview {
+#preview-link {
   margin:auto;
 }
 
@@ -19,6 +19,16 @@
   display: flex;
   justify-content: space-evenly;
   margin:auto;
+}
+
+#preview-scroller {height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#preview-scroller span {
+  font-size: 10vw;
+  margin: auto;
 }
 
 .menu-container {
@@ -35,9 +45,39 @@ td {
 }
 
 .variant-name {
-  margin-left: 5vw;
+  margin-left: 2vw;
+}
+
+.solo-variant {
+  margin-left: unset;
 }
 
 .hidden {
   display: none;
 }
+
+.preview {
+  border: 1px solid firebrick;
+  width: 50vw;
+  height: 100vh;
+  margin:auto;
+
+  display: grid;
+  grid-template-columns: 27vw 23vw;
+}
+
+.prev-left {
+  background-color: blueviolet;
+  display: grid;
+  grid-template-rows: 20vh 80vh;
+}
+
+.prev-right {
+  background-color: rgb(226, 43, 150);
+}
+
+.prev-brand {
+  background-color: burlywood;
+}
+
+
