@@ -1,22 +1,42 @@
-import { useState } from "react";
-import { allItems } from "../all_items";
+import { useState, useRef } from "react";
+import html2canvas from "html2canvas";
 
-const getItems = (group) => allItems.filter(item => item.group === group);
+export default function Contents({focus, group}) {
+  const printRef = useRef();
 
-export default function Contents({focus,group}) {
-  const [contents, setContents] = useState(getItems(group))
-  console.log(contents)
+  const handleDownloadImage = async () => {
+    const element = printRef.current;
+    const canvas = await html2canvas(element);
+
+    const data = canvas.toDataURL('image/jpg');
+    const link = document.createElement('a');
+
+    if (typeof link.download === 'string') {
+      link.href = data;
+      link.download = `madonna_group${group}_menu.jpg`;
+
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else {
+      window.open(data);
+    }
+  };
+
 
   return (
-    <div className={focus === group ? "preview" : "hidden"}>
-      <div className="prev-left">
-        <div className="prev-brand"></div>
-          <div id="prev-content">
-            {group}
-          </div>
+    <div ref={printRef} className={focus == group ? "preview-content" : "hidden"} >
+      <div id="preview-left" >
+        <div id="preview-brand">
+          <img src={"src/assets/download_icon.svg"} data-html2canvas-ignore={true} id={"print-button"} type="button" onClick={handleDownloadImage}></img>
+        </div>
+
+        <div id="prev-content">
+          {group}
+        </div>
       </div>
 
-      <div className="prev-right"></div>
+      <div id="preview-right"></div>
     </div>
   )
 }

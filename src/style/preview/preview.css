@@ -1,0 +1,7 @@
+@import "./head.css";
+@import "./content.css";
+
+#preview-container {
+  display: grid;
+  grid-template-rows: 10vh 83vh;
+}

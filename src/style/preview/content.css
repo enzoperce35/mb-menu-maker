@@ -1,0 +1,27 @@
+.preview-content {
+  margin: auto;
+  width: 97vw;
+  border: 1px solid rgb(20, 18, 18);
+  display: grid;
+  grid-template-columns: 53vw 44vw;
+}
+
+#preview-left {
+  background-color: blueviolet;
+  display: grid;
+  grid-template-rows: 14vh 67vh;
+}
+
+#preview-right {
+  background-color: rgb(226, 43, 150);
+}
+
+#preview-brand {
+  background-color: burlywood;
+}
+
+#print-button {
+  position: absolute;
+  height: 3em;
+  width: 3em;
+}

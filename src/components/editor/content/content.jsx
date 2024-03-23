@@ -1,6 +1,6 @@
-import Items from "../items"
+import Items from "./items"
 
-export default function Menu({focus}) {
+export default function Content({focus}) {
   return (
     <table>
       <Items group={1} focus={focus}/>

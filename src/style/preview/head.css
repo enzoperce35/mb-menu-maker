@@ -1,0 +1,17 @@
+#preview-head {
+  width: 60vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#preview-head h2 {
+  font-size: 2em;
+  margin: auto;
+  font-weight: bold;
+}
+
+#preview-head span {
+  font-size: xx-large;
+  font-weight: bold;
+}

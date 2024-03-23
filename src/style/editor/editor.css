@@ -1,0 +1,7 @@
+@import "./header.css";
+@import "./content/content.css";
+
+#editor {
+  display: grid;
+  grid-template-rows: 18vh 82vh;
+}

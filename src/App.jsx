@@ -1,6 +1,5 @@
-import Menu from './components/store_menu/menu'
-import Header from './components/header'
 import Preview from './components/preview/preview';
+import Editor from './components/editor/editor';
 import { useState } from "react";
 import './App.css'
 
@@ -27,12 +26,11 @@ export default function App() {
   const switchView = () => {
     setShowPreview(showPreview === true ? false : true)
   }
-console.log(MenuGroups.at(focus))
+
   return (
     <div id={'container'}>
       {showPreview && <Preview focus={focus} scroll={scroll} switchView={switchView}/>}
-      {!showPreview && <Header focus={focus} scroll={scroll} switchView={switchView} />}
-      {!showPreview && <Menu focus={focus} />}
+      {!showPreview && <Editor focus={focus} scroll={scroll} switchView={switchView} />}
     </div>
   )
 }

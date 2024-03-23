@@ -1,5 +1,4 @@
 import React from "react";
-import "./toggleswitch.css";
 
 const ToggleSwitch = ({item, checked, updateStorage, global=false}) => {
   return (

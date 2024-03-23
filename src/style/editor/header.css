@@ -1,0 +1,17 @@
+#header {
+  margin: auto;
+}
+
+#scroller {
+  width: 50vw;
+  font-size: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  margin:auto;
+}
+
+#scroller :nth-child(2) {
+  margin: auto;
+  font-size: .7em;
+  font-weight: bolder;
+}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { allItems } from "./all_items";
-import ToggleSwitch from "./store_menu/toggleswitch/toggleswitch";
+import { allItems } from "../../all_items";
+import ToggleSwitch from "./toggleswitch";
 
 const getItems = (group) => allItems.filter(item => item.group === group);
 

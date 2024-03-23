@@ -1,83 +1,19 @@
+@import "./style/editor/editor.css";
+@import "./style/preview/preview.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #container {
-  display: grid;
-  grid-template-rows: 25vh auto;
-}
-
-#header {
-  background-color: chocolate;
-  display: grid;
-  grid-template-columns: repeat(2 1fr);
-}
-
-#preview-link {
-  margin:auto;
-}
-
-#scroller {
-  width: 30vw;
-  font-size: 2em;
-  display: flex;
-  justify-content: space-evenly;
-  margin:auto;
-}
-
-#preview-scroller {height: 100vh;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#preview-scroller span {
-  font-size: 10vw;
-  margin: auto;
-}
-
-.menu-container {
-  background-color: antiquewhite;
+  height: 100vh;
   width: 100vw;
-}
-
-table {
-  width: 100vw;
-}
-
-td {
-  padding: 15px;
-}
-
-.variant-name {
-  margin-left: 2vw;
-}
-
-.solo-variant {
-  margin-left: unset;
+  align-content: center;
 }
 
 .hidden {
   display: none;
 }
-
-.preview {
-  border: 1px solid firebrick;
-  width: 50vw;
-  height: 100vh;
-  margin:auto;
-
-  display: grid;
-  grid-template-columns: 27vw 23vw;
-}
-
-.prev-left {
-  background-color: blueviolet;
-  display: grid;
-  grid-template-rows: 20vh 80vh;
-}
-
-.prev-right {
-  background-color: rgb(226, 43, 150);
-}
-
-.prev-brand {
-  background-color: burlywood;
-}
-
 

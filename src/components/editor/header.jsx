@@ -2,11 +2,7 @@ export default function Header({focus, scroll, switchView}) {
 
   return (
     <div id="header">
-      <span onClick={() => switchView()} id="preview-link">
-        PREVIEW
-      </span>
-
-      <div id="scroller">
+      <div id="scroller" onClick={() => switchView()}>
         <span onClick={() => scroll('left')}>{'<'}</span>
         <span>{`GROUP ${focus}`}</span>
         <span onClick={() => scroll('right')}>{'>'}</span>

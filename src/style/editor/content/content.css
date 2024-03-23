@@ -1,0 +1,22 @@
+@import "./toggleswitch.css";
+
+.menu-container {
+  background-color: antiquewhite;
+  width: 100vw;
+}
+
+table {
+  width: 100vw;
+}
+
+td {
+  padding: 15px;
+}
+
+.variant-name {
+  margin-left: 2vw;
+}
+
+.solo-variant {
+  margin-left: unset;
+}
