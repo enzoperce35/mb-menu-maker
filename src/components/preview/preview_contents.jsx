@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import html2canvas from "html2canvas";
+import { default as downloadIcon} from "../../assets/download_icon.svg"
 
 export default function Contents({focus, group}) {
   const printRef = useRef();
@@ -23,12 +24,11 @@ export default function Contents({focus, group}) {
     }
   };
 
-
   return (
     <div ref={printRef} className={focus == group ? "preview-content" : "hidden"} >
       <div id="preview-left" >
         <div id="preview-brand">
-          <img src={"src/assets/download_icon.svg"} data-html2canvas-ignore={true} id={"print-button"} type="button" onClick={handleDownloadImage}></img>
+          <img src={downloadIcon} data-html2canvas-ignore={true} id={"print-button"} type="button" onClick={handleDownloadImage}></img>
         </div>
 
         <div id="prev-content">

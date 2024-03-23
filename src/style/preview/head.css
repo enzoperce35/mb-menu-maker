@@ -1,5 +1,5 @@
 #preview-head {
-  width: 60vw;
+  width: 80vw;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
@@ -12,6 +12,6 @@
 }
 
 #preview-head span {
-  font-size: xx-large;
+  font-size: 1.7em;
   font-weight: bold;
 }
