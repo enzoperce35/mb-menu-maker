@@ -5,7 +5,8 @@ import ToggleSwitch from "./toggleswitch";
 const getItems = (group) => allItems.filter(item => item.group === group);
 
 export default function Items({group, focus}) {
-  const [menu, setMenu] = useState({items: getItems(group), updated: false})
+  const [menu, setMenu] = useState({items: getItems(group), updated: false});
+  const [variantsHidden, setVariantsHidden] = useState([]);
 
   const updateStorage = (id, available, global) => {
     if (global) {
@@ -23,9 +24,18 @@ export default function Items({group, focus}) {
     setMenu({...menu, updated: true});
   }
 
+  const setVariantVisibility = (item) => {
+    if (variantsHidden.includes(item.name)) {
+      setVariantsHidden(openedItems => openedItems.filter(i => item.name !== i))
+    } else {
+      setVariantsHidden(openedItems => [...openedItems, item.name])
+    }
+  }
+
   const displayItems = menu.items.map((item) => {
-    let variants = []
+    let variants = [];
     let itemAvailable = false;
+    let variantsAreHidden = variantsHidden.includes(item.name);
 
     Object.entries(item.variants).map(variant => {
       const [key, value] = variant;
@@ -39,15 +49,19 @@ export default function Items({group, focus}) {
     return (
       <tbody className={focus === group ? "menu-container" : "hidden"}>
         <tr className={(variants.length < 2) ? "hidden" : "menu-item"}>
-          <td>
-            <div>
+          <td className="item-name">
+            <span>
               {item.name}
-            </div>
+            </span>
+
+            <span className={'variant-toggle'} onClick={() => setVariantVisibility(item)}>
+              {variantsAreHidden ? "\u25b2" : "\u25bc"}
+            </span>
           </td>
 
           <td></td>
 
-          <td>
+          <td className="availability-toggle">
             <span>
               <ToggleSwitch item={item.name} checked={itemAvailable} updateStorage={updateStorage} global={true} />
             </span>
@@ -55,18 +69,18 @@ export default function Items({group, focus}) {
         </tr>
 
         {variants.map(variant => (
-          <tr key={variant.id} className={"menu-item"}>
+          <tr key={variant.id} className={(variantsAreHidden || variants.length < 2) ? "menu-item" : "hidden"}>
             <td>
               <div className={(variants.length < 2) ? "solo-variant" : "variant-name"}>
                 <span>{variant.name}</span>
               </div>
             </td>
 
-            <td style={{'width': '5vw'}}>
+            <td className={'variant-price'}>
               <span>{variant.price}</span>
             </td>
 
-            <td>
+            <td className="availability-toggle">
               <span>
                 <ToggleSwitch item={variant.id} checked={variant.available} updateStorage={updateStorage} />
               </span>
