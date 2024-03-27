@@ -33,6 +33,8 @@ export default function Contents({focus, group}) {
         </div>
 
         <div class="preview-items">
+          <h2>Available Today</h2>
+
           <Item group={1} focus={focus} />
           <Item group={2} focus={focus} />
         </div>

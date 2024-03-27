@@ -4,7 +4,7 @@
   height: fit-content;
   border: 1px solid rgb(20, 18, 18);
   display: grid;
-  grid-template-columns: 53vw 44vw;
+  grid-template-columns: 75vw 44vw;
 }
 
 #preview-right {
@@ -30,10 +30,15 @@
 
 .preview-items {
   display: grid;
-  font-size: .80em;
+  font-size: .70em;
   grid-template-rows: auto;
   gap: 10px;
   padding: 0 2vw 3vh ;
+}
+
+.preview-items h2 {
+  height: 4vh;
+  align-content: end;
 }
 
 .preview-category {
