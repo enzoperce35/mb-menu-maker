@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import html2canvas from "html2canvas";
-import { default as downloadIcon} from "../../assets/download_icon.svg"
+import Item from "./item";
+import {default as downloadIcon} from "../../../assets/download_icon.svg"
 
 export default function Contents({focus, group}) {
   const printRef = useRef();
@@ -31,8 +32,9 @@ export default function Contents({focus, group}) {
           <img src={downloadIcon} data-html2canvas-ignore={true} id={"print-button"} type="button" onClick={handleDownloadImage}></img>
         </div>
 
-        <div id="prev-content">
-          {group}
+        <div class="preview-items">
+          <Item group={1} focus={focus} />
+          <Item group={2} focus={focus} />
         </div>
       </div>
 

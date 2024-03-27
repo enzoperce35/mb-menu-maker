@@ -1,15 +1,10 @@
 .preview-content {
   margin: auto;
   width: 97vw;
+  height: fit-content;
   border: 1px solid rgb(20, 18, 18);
   display: grid;
   grid-template-columns: 53vw 44vw;
-}
-
-#preview-left {
-  background-color: blueviolet;
-  display: grid;
-  grid-template-rows: 14vh 67vh;
 }
 
 #preview-right {
@@ -25,3 +20,33 @@
   height: 3em;
   width: 3em;
 }
+
+#preview-left {
+  min-height: 50vh;
+  max-height: max-content;
+  display: grid;
+  grid-template-rows: 12vh auto;
+}
+
+.preview-items {
+  display: grid;
+  font-size: .80em;
+  grid-template-rows: auto;
+  gap: 10px;
+  padding: 0 2vw 3vh ;
+}
+
+.preview-category {
+  margin-top: 10px;
+}
+
+.preview-variant {
+  padding: 0 2vw;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.preview-variant > :nth-child(2) {
+  margin-left: auto;
+}
+

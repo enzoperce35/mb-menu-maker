@@ -3,5 +3,5 @@
 
 #preview-container {
   display: grid;
-  grid-template-rows: 10vh 83vh;
+  grid-template-rows: 10vh auto;
 }

@@ -3,7 +3,7 @@ import Editor from './components/editor/editor';
 import { useState } from "react";
 import './App.css'
 
-const MenuGroups = [1, 2, 3];
+const MenuGroups = [1, 2];
 
 export default function App() {
   const [focus, setFocus] = useState(1);
@@ -13,9 +13,9 @@ export default function App() {
     const newFocus = (direction === 'right') ? focus + 1 : focus - 1;
 
     if (newFocus < 1) {
-      setFocus(3)
+      setFocus(2)
     }
-    else if (newFocus > 3) {
+    else if (newFocus > 2) {
       setFocus(1)
     }
     else {

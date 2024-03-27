@@ -1,5 +1,5 @@
 export const allItems = [
-  // RICE MEALS
+  // GROUP 1
   { category: 'Rice Meals',
     name: 'Chaofan',
     group: 1,
@@ -60,18 +60,73 @@ export const allItems = [
     group: 1,
     variants: { 'Burger Steak In Mushroom Sauce': {price: 80} }},
 
-  // MERIENDA
-  { category: 'Merienda',
+    { category: 'Pasta',
+    name: 'Palabok',
+    group: 1,
+    variants: { solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
+
+  { category: 'Pasta',
+    name: 'Spaghetti',
+    group: 1,
+    variants: { solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
+
+  { category: 'Pasta',
+    name: 'Carbonara',
+    group: 1,
+    variants: { solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
+
+  { category: 'Pasta',
+    name: 'Pansit Bihon',
+    group: 1,
+    variants: { solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
+
+  { category: 'Beverages',
+    name: 'Beverages',
+    group: 1,
+    variants: {
+      '8oz Bottled Water': {price: 10},
+      'Coke Mismo': {price: 20},
+      'Mountain Dew 295ml': {price: 20},
+      '1L Iced Tea': {price: 60},
+      '1L Orange Juice': {price: 60} }},
+
+      { category: 'Add-Ons',
+      name: 'Add-Ons',
+      group: 1,
+      variants: {
+        'bbq sauce': {price: 20},
+        'honey soy garlic sauce': {price: 20},
+        'buffalo sauce': {price: 20},
+        'orange sauce': {price: 20} }},
+
+    { category: 'Add-Ons',
+      name: 'Add-Ons',
+      group: 1,
+      variants: {
+        coleslaw: {price: 20},
+        'Garlic Bread': {price: 15} }},
+
+    { category: 'Add-Ons',
+        name: 'Add-Ons',
+        group: 1,
+        variants: {
+          'Fried Egg': {price: 15},
+          'Plain Rice': {price: 15},
+          'Fried Rice': {price: 20},
+          veggies: {price: 20} }},
+
+  // GROUP 2
+  { category: 'Burger',
     name: 'Beef Burger',
     group: 2,
     variants: { solo: { price: 50}, 'w/ Fries': {price: 70}, 'w/ Pasta': {price: 85} }},
 
-  { category: 'Merienda',
+  { category: 'Burger',
     name: 'Chicken Burger',
     group: 2,
     variants: { solo: { price: 60}, chicken: {price: 80}, 'w/ Pasta': {price: 95} }},
 
-  { category: 'Merienda',
+  { category: 'Fries',
     name: 'Fries',
     group: 2,
     variants: {
@@ -84,101 +139,29 @@ export const allItems = [
       'large bbq': {code: 'LB', price: 65},
       'large sour & cream': {code: 'LSC', price: 65}}},
 
-  { category: 'Merienda',
+  { category: 'Siomai',
     name: 'Siomai',
     group: 2,
     variants: { '4pcs': {price: 30}, '6pcs': {price: 45}, '8pcs': {price: 60}, tub: {price: 100} }},
 
-  { category: 'Merienda',
+  { category: 'Empanada',
     name: 'Empanada',
     group: 2,
     variants: { '5pcs': {price: 100},  '10pcs': {price: 190} }},
 
-  { category: 'Merienda',
+  { category: 'Maruya',
     name: 'Maruya',
     group: 2,
     variants: { regular: {price: 50}, bites: {price: 120} }},
 
-  { category: 'Merienda',
-    name: 'Garlic Bread',
-    group: 2,
-    variants: { 'Garlic Bread': {price: 10} }},
-
-  { category: 'Merienda',
+  { category: 'Milk Shake',
     name: 'Milk Shake',
     group: 2,
     variants: { chocolate: {code: 'MS-Choco', price: 50}, mango: {code: 'MS-Mango', price: 50}, strawberry: {code: 'MS-Berry', price: 50}, 'cookies and cream': {code: 'MS-Cream', price: 50} }},
 
-  { category: 'Merienda',
-    name: 'Palabok',
-    group: 2,
-    variants: { solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
-
-  { category: 'Merienda',
-    name: 'Spaghetti',
-    group: 2,
-    variants: { solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
-
-  { category: 'Merienda',
-    name: 'Carbonara',
-    group: 2,
-    variants: { solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
-
-  { category: 'Merienda',
-    name: 'Pansit Bihon',
-    group: 2,
-    variants: { solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
-
-  // BEVERAGES
-  { category: 'Beverages',
-    name: 'Coke Mismo',
-    group: 3,
-    variants: { 'Coke Mismo': {price: 20} }},
-
-  { category: 'Beverages',
-    name: 'Mountain Dew 295ml',
-    group: 3,
-    variants: { 'Mountain Dew 295ml': {price: 20} }},
-
-  { category: 'Beverages',
-    name: '1L Iced Tea',
-    group: 3,
-    variants: { '1L Iced Tea': {price: 60} }},
-
-  { category: 'Beverages',
-    name: '1L Orange Juice',
-    group: 3,
-    variants: { '1L Orange Juice': {price: 60} }},
-
-  { category: 'Beverages',
-    name: '8oz Bottled Water',
-    group: 3,
-    variants: { '8oz Bottled Water': {price: 10} }},
-
-  // ADD-ONS
   { category: 'Add-Ons',
     name: 'Add-Ons',
-    group: 1,
+    group: 2,
     variants: {
-      coleslaw: {price: 20},
-      'bbq sauce': {price: 20},
-      'honey soy garlic sauce': {price: 20},
-      'buffalo sauce': {price: 20},
-      'orange sauce': {price: 20},
-      veggies: {price: 20} }},
-
-  { category: 'Add-Ons',
-    name: 'Fried Egg',
-    group: 1,
-    variants: { 'Fried Egg': {price: 15} }},
-
-  { category: 'Add-Ons',
-    name: 'Plain Rice',
-    group: 1,
-    variants: { 'Plain Rice': {price: 15} }},
-
-  { category: 'Add-Ons',
-    name: 'Fried Rice',
-    group: 1,
-    variants: { 'Fried Rice': {price: 20} }},
+      'pearl': {price: 10} }},
 ]
