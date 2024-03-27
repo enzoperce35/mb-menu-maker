@@ -1,5 +1,5 @@
 @import "./head.css";
-@import "./content.css";
+@import "./contents/content.css";
 
 #preview-container {
   display: grid;

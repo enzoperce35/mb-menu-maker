@@ -1,0 +1,9 @@
+#preview-brand {
+  background-color: burlywood;
+}
+
+#print-button {
+  position: absolute;
+  height: 3em;
+  width: 3em;
+}

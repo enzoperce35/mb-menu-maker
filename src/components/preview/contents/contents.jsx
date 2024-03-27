@@ -37,10 +37,29 @@ export default function Contents({focus, group}) {
 
           <Item group={1} focus={focus} />
           <Item group={2} focus={focus} />
+          <Item group={3} focus={focus} />
         </div>
       </div>
 
-      <div id="preview-right"></div>
+      <div id="preview-images">
+        <div id={`preview-image-large-a${focus}`}></div>
+
+        <div className={'image-double'} >
+          <div id={`preview-image-double-a${focus}`}></div>
+          <div id={`preview-image-double-b${focus}`}></div>
+        </div>
+
+        <div className={'image-double'} >
+          <div id={`preview-image-double-c${focus}`}></div>
+          <div id={`preview-image-double-d${focus}`}></div>
+        </div>
+
+        <div id={`preview-image-single-a${focus}`}></div>
+
+        <div id={`preview-image-large-b${focus}`}></div>
+
+        <div id={`preview-image-single-b${focus}`}></div>
+      </div>
     </div>
   )
 }

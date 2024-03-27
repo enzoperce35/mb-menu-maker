@@ -1,0 +1,12 @@
+@import "./brand.css";
+@import "./items.css";
+@import "./images.css";
+
+.preview-content {
+  margin: auto;
+  width: 97vw;
+  height: fit-content;
+  border: 1px solid rgb(20, 18, 18);
+  display: grid;
+  grid-template-columns: 57vw 40vw;
+}

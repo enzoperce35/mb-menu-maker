@@ -1,0 +1,17 @@
+#preview-images {
+  padding: .35em;
+
+  background-color: rgb(226, 43, 150);
+  display: grid;
+  grid-template-rows: 2fr repeat(3, 1fr) 2fr 1fr;
+  gap: .40em;
+}
+
+#preview-images div {
+  border: 1px solid black;
+}
+
+.image-double {
+  display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}

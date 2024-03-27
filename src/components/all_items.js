@@ -25,9 +25,9 @@ export const allItems = [
     variants: { 'Burger Steak in Mushroom Sauce w/ Rice': {price: 100} }},
 
   { category: 'Rice Meals',
-    name: 'Silog',
+    name: 'Rice Meals',
     group: 1,
-    variants: { Tapsilog: {price: 85} }, Porksilog: {price: 85}, Chixilog: {price: 85}, Malingsilog: {price: 70}, MHotsilog: {price: 70} },
+    variants: { Tapsilog: {price: 85}, Porksilog: {price: 85}, Chixilog: {price: 85}, Malingsilog: {price: 70}, Hotsilog: {price: 70} }},
 
   // A LA CARTE
   { category: 'Ala Carte',
@@ -60,53 +60,17 @@ export const allItems = [
     group: 1,
     variants: { 'Burger Steak In Mushroom Sauce': {price: 80} }},
 
-    { category: 'Pasta',
-    name: 'Palabok',
-    group: 1,
-    variants: { solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
 
-  { category: 'Pasta',
-    name: 'Spaghetti',
-    group: 1,
-    variants: { solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
-
-  { category: 'Pasta',
-    name: 'Carbonara',
-    group: 1,
-    variants: { solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
-
-  { category: 'Pasta',
-    name: 'Pansit Bihon',
-    group: 1,
-    variants: { solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
-
-  { category: 'Beverages',
-    name: 'Beverages',
+  { category: 'Add-Ons',
+    name: 'Add-Ons',
     group: 1,
     variants: {
-      '8oz Bottled Water': {price: 10},
-      'Coke Mismo': {price: 20},
-      'Mountain Dew 295ml': {price: 20},
-      '1L Iced Tea': {price: 60},
-      '1L Orange Juice': {price: 60} }},
-
-      { category: 'Add-Ons',
-      name: 'Add-Ons',
-      group: 1,
-      variants: {
         'bbq sauce': {price: 20},
         'honey soy garlic sauce': {price: 20},
         'buffalo sauce': {price: 20},
         'orange sauce': {price: 20} }},
 
-    { category: 'Add-Ons',
-      name: 'Add-Ons',
-      group: 1,
-      variants: {
-        coleslaw: {price: 20},
-        'Garlic Bread': {price: 15} }},
-
-    { category: 'Add-Ons',
+  { category: 'Add-Ons',
         name: 'Add-Ons',
         group: 1,
         variants: {
@@ -163,5 +127,69 @@ export const allItems = [
     name: 'Add-Ons',
     group: 2,
     variants: {
+      coleslaw: {price: 20},
       'pearl': {price: 10} }},
+
+
+  //GROUP 3
+  { category: 'Pasta',
+    name: 'Palabok',
+    group: 3,
+    variants: {
+      solo: {price: 65},
+      'w/ Garlic Bread': {price: 75},
+      'w/ Garlic Bread': {price: 75},
+      'Bilao Small': {price: 350},
+      'Bilao Medium': {price: 500},
+      'Bilao Large': {price: 750},
+      'Bilao XL': {price: 850} }},
+
+  { category: 'Pasta',
+    name: 'Spaghetti',
+    group: 3,
+    variants: {
+      solo: {price: 65},
+      'w/ Garlic Bread': {price: 75},
+      'Bilao Small': {price: 350},
+      'Bilao Medium': {price: 500},
+      'Bilao Large': {price: 750},
+      'Bilao XL': {price: 850} }},
+
+  { category: 'Pasta',
+    name: 'Carbonara',
+    group: 3,
+    variants: {
+      solo: {price: 65},
+      'w/ Garlic Bread': {price: 75},
+      'Bilao Small': {price: 350},
+      'Bilao Medium': {price: 500},
+      'Bilao Large': {price: 750},
+      'Bilao XL': {price: 850} }},
+
+  { category: 'Pasta',
+    name: 'Pansit Bihon',
+    group: 3,
+    variants: {
+      solo: {price: 65},
+      'w/ Garlic Bread': {price: 75},
+           'Bilao Small': {price: 350},
+      'Bilao Medium': {price: 500},
+      'Bilao Large': {price: 750},
+      'Bilao XL': {price: 850} }},
+
+  { category: 'Beverages',
+    name: 'Beverages',
+    group: 3,
+    variants: {
+      '8oz Bottled Water': {price: 10},
+      'Coke Mismo': {price: 20},
+      'Mountain Dew 295ml': {price: 20},
+      '1L Iced Tea': {price: 60},
+      '1L Orange Juice': {price: 60} }},
+
+  { category: 'Add-Ons',
+    name: 'Add-Ons',
+    group: 3,
+    variants: { 'Garlic Bread': {price: 15} }},
+
 ]
