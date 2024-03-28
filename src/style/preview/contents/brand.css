@@ -1,9 +1,32 @@
+@font-face {
+  font-family: 'Brand';
+  src:
+    url('../../../assets/fonts/Allura-Regular.ttf'),
+    url('../../../assets/fonts/Pacifico-Regular.ttf'),
+    url('../../../assets/fonts/EBGaramond-VariableFont_wght.ttf'),
+    url('../../../assets/fonts/EBGaramond-Italic-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #preview-brand {
+  position: relative;
+  font-family: 'Brand';
   background-color: burlywood;
+  text-align: center;
+  align-content: center;
+}
+
+#preview-brand h5 {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: green;
 }
 
 #print-button {
   position: absolute;
   height: 3em;
   width: 3em;
+  top: 0;
+  left: 0;
 }
