@@ -14,13 +14,11 @@
   position: relative;
   text-align: center;
   align-content: center;
-  box-shadow: 0 4px 15px -5px black;
 }
 
 .brand-corners {
   position: absolute;
   height: 75%;
-  width: auto;
 }
 
 #corner-left {
