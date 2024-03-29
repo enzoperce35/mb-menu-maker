@@ -1,26 +1,13 @@
-@font-face {
-  font-family: 'Items';
-  src:
-    url('../../../assets/fonts/Prompt-Light.ttf'),
-    url('../../../assets/fonts/Prompt-Regular.ttf'),
-    url('../../../assets/fonts/Prompt-Bold.ttf'),
-    url('../../../assets/fonts/Prompt-Medium.ttf'),
-    url('../../../assets/fonts/Prompt-BoldItalic.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
 #preview-left {
   min-height: 50vh;
   max-height: max-content;
   display: grid;
   grid-template-rows: 12vh auto;
+  background-image: linear-gradient(to top right,  rgb(253, 152, 0), green);
 }
 
 .preview-items {
   display: grid;
-  font-family: 'Items';
   font-size: .60em;
   grid-template-rows: auto;
   gap: 5px;

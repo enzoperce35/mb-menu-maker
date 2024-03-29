@@ -58,8 +58,6 @@ export default function Contents({focus, group}) {
         <div id={`preview-image-single-a${focus}`}></div>
 
         <div id={`preview-image-large-b${focus}`}></div>
-
-        <div id={`preview-image-single-b${focus}`}></div>
       </div>
     </div>
   )

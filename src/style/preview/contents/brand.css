@@ -10,14 +10,15 @@
 }
 
 #preview-brand {
+  background-image: linear-gradient(to top left, antiquewhite, rgb(253, 152, 0));
   position: relative;
-  font-family: 'Brand';
   background-color: burlywood;
   text-align: center;
   align-content: center;
 }
 
 #preview-brand h5 {
+  font-family: 'Brand';
   font-size: xx-large;
   font-weight: bolder;
   color: green;
