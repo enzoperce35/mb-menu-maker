@@ -3,7 +3,6 @@
   max-height: max-content;
   display: grid;
   grid-template-rows: 12vh auto;
-  background-image: linear-gradient(to top right, yellow, green);
 }
 
 .preview-items {

@@ -10,5 +10,5 @@
   border: 2px solid green;
   display: grid;
   grid-template-columns: 57vw 40vw;
-  background-image: linear-gradient(to top right, yellow, green);
+  background-image: linear-gradient(to top right, orange, green);
 }
