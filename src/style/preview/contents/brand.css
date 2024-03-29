@@ -19,8 +19,7 @@
 
 .brand-corners {
   position: absolute;
-  height: 55%;
-  width: 50%;
+  height: 75%;
 }
 
 #corner-left {
@@ -33,7 +32,6 @@
   bottom: 0;
   right: 0;
 }
-
 
 #preview-brand h5 {
   font-family: 'Brand';
