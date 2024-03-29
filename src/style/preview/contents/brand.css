@@ -11,26 +11,23 @@
 
 #preview-brand {
   background-image: linear-gradient(to top left, rgb(238, 148, 14), rgb(248, 227, 201));
-  position: relative;
   text-align: center;
   align-content: center;
   box-shadow: 0 4px 15px -5px black;
-
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
 }
 
 .brand-corners {
-  height: 70%;
+  height: 75%;
   width: auto;
 }
 
 #corner-left {
   transform: scale(-1, -1);
+
 }
 
 #corner-right {
-
+ 
 }
 
 #preview-brand h5 {

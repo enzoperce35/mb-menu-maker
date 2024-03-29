@@ -32,8 +32,8 @@ export default function Contents({focus, group}) {
         <div id="preview-brand">
           <img src={downloadIcon} data-html2canvas-ignore={true} id={"print-button"} onClick={handleDownloadImage}></img>
           <img src={corner} className={'brand-corners'} id={"corner-left"} ></img>
-          <h5>Madonna's</h5>
           <img src={corner} className={'brand-corners'} id={"corner-right"} ></img>
+          <h5>Madonna's</h5>
         </div>
 
         <div className="preview-items">
