@@ -30,21 +30,10 @@ export default function Contents({focus, group}) {
     <div ref={printRef} className={focus == group ? "preview-content" : "hidden"} >
       <div id="preview-left" >
         <div id="preview-brand">
-        <svg viewBox="0 0 287.5 287.5" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
- <g transform="matrix(-.035677 0 0 -.035677 264.78 257.77)" stroke="#000" stroke-width="35.278">
-  <path d="m2714 2070h-2375v4580h-339v-4920h3054l-340 340z" fill="#eb615b"/>
-  <g fill="#eb615b">
-   <path d="m6650 0v339h-4580v2375l-340 340v-3054h4920z"/>
-  </g>
-  <g fill="#eb6187">
-   <path d="m1018 4513v-3156h-1018v-1357h1357v1018h3156l-340 339h-2816v2816l-339 340zm0-3495v-679h-679v679h679z"/>
-  </g>
- </g>
-</svg>
-          <img src={corner} className={'brand-corners'} id={"corner-left"} ></img>
-          <img src={corner} className={'brand-corners'} id={"corner-right"} ></img>
           <img src={downloadIcon} data-html2canvas-ignore={true} id={"print-button"} onClick={handleDownloadImage}></img>
+          <img src={corner} className={'brand-corners'} id={"corner-left"} ></img>
           <h5>Madonna's</h5>
+          <img src={corner} className={'brand-corners'} id={"corner-right"} ></img>
         </div>
 
         <div className="preview-items">
