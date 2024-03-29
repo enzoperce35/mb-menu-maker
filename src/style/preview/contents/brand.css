@@ -17,20 +17,23 @@
   box-shadow: 0 4px 15px -5px black;
 }
 
-#corner-left {
+.brand-corners {
   position: absolute;
   height: 55%;
+  width: unset;
+}
+
+#corner-left {
   transform: scale(-1, -1);
   top: 0;
   left: 0;
 }
 
 #corner-right {
-  position: absolute;
-  height: 55%;
   bottom: 0;
   right: 0;
 }
+
 
 #preview-brand h5 {
   font-family: 'Brand';
