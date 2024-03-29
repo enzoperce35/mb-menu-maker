@@ -9,10 +9,7 @@ export default function Contents({focus, group}) {
 
   const handleDownloadImage = async () => {
     const element = printRef.current;
-    const canvas = await html2canvas(element, {
-      allowTaint: true,
-      useCORS: true,
-    });
+    const canvas = await html2canvas(element);
 
     const data = canvas.toDataURL('image/jpg');
     const link = document.createElement('a');
