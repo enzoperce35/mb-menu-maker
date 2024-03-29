@@ -30,8 +30,8 @@ export default function Contents({focus, group}) {
     <div ref={printRef} className={focus == group ? "preview-content" : "hidden"} >
       <div id="preview-left" >
         <div id="preview-brand">
-          <img src={corner} data-html2canvas-ignore={false} className={'brand-corners'} id={"corner-left"} ></img>
-          <img src={corner} data-html2canvas-ignore={false} className={'brand-corners'}  id={"corner-right"} ></img>
+          <img src={corner} className={'brand-corners'} id={"corner-left"} ></img>
+          <img src={corner} className={'brand-corners'} id={"corner-right"} ></img>
           <img src={downloadIcon} data-html2canvas-ignore={true} id={"print-button"} onClick={handleDownloadImage}></img>
           <h5>Madonna's</h5>
         </div>
