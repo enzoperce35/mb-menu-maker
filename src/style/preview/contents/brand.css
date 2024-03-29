@@ -20,7 +20,7 @@
 .brand-corners {
   position: absolute;
   height: 55%;
-  width: unset;
+  width: 50%;
 }
 
 #corner-left {
