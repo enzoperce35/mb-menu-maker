@@ -10,12 +10,29 @@
 }
 
 #preview-brand {
-  background-image: linear-gradient(to top left, antiquewhite, rgb(253, 152, 0));
+  background-image: linear-gradient(to top left, rgb(238, 148, 14), rgb(248, 227, 201));
   position: relative;
-  background-color: burlywood;
   text-align: center;
   align-content: center;
+  box-shadow: 0 4px 15px -5px black;
 }
+
+.brand-corners {
+  position: absolute;
+  height: 55%;
+}
+
+#corner-left {
+  transform: scale(-1, -1);
+  top: 0;
+  left: 0;
+}
+
+#corner-right {
+  bottom: 0;
+  right: 0;
+}
+
 
 #preview-brand h5 {
   font-family: 'Brand';

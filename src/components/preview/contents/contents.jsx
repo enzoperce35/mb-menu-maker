@@ -1,7 +1,9 @@
 import { useState, useRef } from "react";
 import html2canvas from "html2canvas";
 import Item from "./item";
-import {default as downloadIcon} from "../../../assets/download_icon.svg"
+import {default as downloadIcon} from "../../../assets/icons/download_icon.svg"
+import {default as cornerLeft} from "../../../assets/icons/brand_corner_left.svg"
+import {default as cornerRight} from "../../../assets/icons/brand_corner_right.svg"
 
 export default function Contents({focus, group}) {
   const printRef = useRef();
@@ -29,7 +31,9 @@ export default function Contents({focus, group}) {
     <div ref={printRef} className={focus == group ? "preview-content" : "hidden"} >
       <div id="preview-left" >
         <div id="preview-brand">
-          <img src={downloadIcon} data-html2canvas-ignore={true} id={"print-button"} type="button" onClick={handleDownloadImage}></img>
+          <img src={cornerLeft} className={'brand-corners'} id={"corner-left"} ></img>
+          <img src={cornerRight} className={'brand-corners'}  id={"corner-right"} ></img>
+          <img src={downloadIcon} data-html2canvas-ignore={true} id={"print-button"} onClick={handleDownloadImage}></img>
           <h5>Madonna's</h5>
         </div>
 

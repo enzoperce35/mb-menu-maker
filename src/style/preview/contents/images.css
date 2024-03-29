@@ -1,5 +1,4 @@
 #preview-images {
-  background-color: green;
   display: grid;
   grid-template-rows: 2fr repeat(3, 1fr) 3fr;
   gap: .40em;
