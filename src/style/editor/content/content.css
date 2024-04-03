@@ -1,4 +1,5 @@
 @import "./toggleswitch.css";
+@import "./schedule_setter.css";
 
 .menu-container {
   background-color: antiquewhite;
@@ -28,4 +29,8 @@ td {
 
 .solo-variant {
   margin-left: unset;
+}
+
+#edit-switch img {
+  height: 4vh;
 }

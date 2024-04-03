@@ -1,0 +1,7 @@
+.schedule_setter form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule_setter form:first-child {
+}

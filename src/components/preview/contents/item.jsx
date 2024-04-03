@@ -7,7 +7,7 @@ export default function Item({group, focus}) {
 
    return (
     <>
-      { getItems(group).map((item, index) => {
+      { getItems(group).map((item) => {
         let changeCategory = false;
         let variants = [];
         let itemAvailable = false;
@@ -25,11 +25,13 @@ export default function Item({group, focus}) {
           const [key, value] = variant;
           const variantId = `${item.name}${key}`;
           const variantIsAvailable = localStorage.getItem(variantId) === null;
+          const variantSchedule = sessionStorage.getItem(variantId);
 
           if (variantIsAvailable) itemAvailable = true;
 
-          variants.push({name: key, id: variantId, price: value.price, available: variantIsAvailable})
+          variants.push({name: key, id: variantId, price: value.price, available: variantIsAvailable, schedule: variantSchedule})
         })
+
         if (!itemAvailable) return;
 
         return (
@@ -37,8 +39,14 @@ export default function Item({group, focus}) {
             <h4 className={changeCategory ? "preview-category" : "hidden"}>{item.category}</h4>
 
             { variants.map(variant => (
-              <div className={variant.available ? "preview-variant" : "hidden"}>
-                <span>{`${(item.category === item.name) ? "" : item.name} ${(variant.name === item.name) ? "" : variant.name}`}</span>
+
+              <div className={variant.available || variant.schedule !== null ? "preview-variant" : "hidden"}>
+                <span>
+                  {`${(item.category === item.name) ? "" : item.name} ${(variant.name === item.name) ? "" : variant.name}`}
+
+                  <span className={variant.schedule !== null ? "variant-schedule" : 'hidden'}>{variant.schedule}</span>
+                </span>
+
                 <span>{`${variant.price}`}</span>
               </div>
             ))}
