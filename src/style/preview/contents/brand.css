@@ -10,7 +10,9 @@
 }
 
 #preview-brand {
-  background-image: linear-gradient(to top left, rgb(238, 148, 14), rgb(248, 227, 201));
+  /* background-image: linear-gradient(to top left, rgb(238, 148, 14), rgb(248, 227, 201)); */
+  /* background-image: linear-gradient(to top left, #FFEB61, #F6F7F9); */
+  background-image: linear-gradient(to top left,#F7D655, #F7EAD4);
   position: relative;
   text-align: center;
   align-content: center;

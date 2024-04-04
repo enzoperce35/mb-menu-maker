@@ -54,7 +54,7 @@
 }
 
 #preview-image-single-a2 {
-  background-image: url('../../../assets/images/menu_group2/maruya_solo.jpeg');
+  background-image: url('../../../assets/images/menu_group2/burger_with_pasta.jpg');
 }
 
 #preview-image-double-a2 {
@@ -62,15 +62,15 @@
 }
 
 #preview-image-double-b2 {
-  background-image: url('../../../assets/images/menu_group2/fries_with_juice.jpg');
-}
-
-#preview-image-double-c2 {
   background-image: url('../../../assets/images/menu_group2/chicken_burger.jpeg');
 }
 
+#preview-image-double-c2 {
+  background-image: url('../../../assets/images/menu_group2/maruya.jpg');
+}
+
 #preview-image-double-d2 {
-  background-image: url('../../../assets/images/menu_group2/burger_with_pasta.jpg');
+  background-image: url('../../../assets/images/menu_group2/fries_with_juice.jpg');
 }
 
 /* GROUP 3 */

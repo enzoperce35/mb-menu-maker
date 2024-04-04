@@ -8,6 +8,7 @@
 .preview-items {
   display: grid;
   font-size: .60em;
+  font-weight: bold;
   grid-template-rows: auto;
   gap: 5px;
   padding: 0 2vw 3vh ;

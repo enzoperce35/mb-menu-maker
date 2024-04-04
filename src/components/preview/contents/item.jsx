@@ -36,7 +36,7 @@ export default function Item({group, focus}) {
 
         return (
           <div className={focus === group ? "preview-item" : "hidden"} >
-            <h4 className={changeCategory ? "preview-category" : "hidden"}>{item.category}</h4>
+            <h4 className={changeCategory && itemAvailable ? "preview-category" : "hidden"}>{item.category}</h4>
 
             { variants.map(variant => (
 

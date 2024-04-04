@@ -3,6 +3,7 @@
 @import "./images.css";
 
 .preview-content {
+  background-image: linear-gradient(to top right, #90CF44, #59B512);
   margin: auto;
   width: 97vw;
   height: fit-content;
@@ -10,5 +11,4 @@
   border: 2px solid green;
   display: grid;
   grid-template-columns: 57vw 40vw;
-  background-image: linear-gradient(to top right, orange, green);
 }

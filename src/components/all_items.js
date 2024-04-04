@@ -88,7 +88,7 @@ export const allItems = [
   { category: 'Burger',
     name: 'Chicken Burger',
     group: 2,
-    variants: { solo: { price: 60}, chicken: {price: 80}, 'w/ Pasta': {price: 95} }},
+    variants: { solo: { price: 60}, 'w/ Fries': {price: 80}, 'w/ Pasta': {price: 95} }},
 
   { category: 'Fries',
     name: 'Fries',

@@ -27,7 +27,7 @@ export default function Contents({focus, group}) {
   };
 
   return (
-    <div ref={printRef} className={focus == group ? "preview-content" : "hidden"} >
+    <div ref={printRef} className={focus === group ? "preview-content" : "hidden"}>
       <div id="preview-left" >
         <div id="preview-brand">
           <img src={brandCorner} className={'brand-corners'} id={"corner-left"} ></img>
