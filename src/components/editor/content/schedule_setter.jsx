@@ -4,7 +4,6 @@ const ScheduleSetter = ({item, updateSessionStorage, schedule = ''}) => {
     <div className="container">
       <div className="schedule_setter">
         <select defaultValue={schedule === null ? 'Unset' : schedule} id="timeAvailable" name={'timeAvailable'} onChange={(e) => updateSessionStorage(item, e.target.value)} >
-          <option disabled selected></option>
           <option key={'Unset'} value=""></option>
           <option key={"9AM"} value="9AM">9AM</option>
           <option key={"10AM"} value="10AM">10AM</option>

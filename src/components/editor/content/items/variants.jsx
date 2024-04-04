@@ -10,7 +10,7 @@ export default function Variants({variant, variantsAreHidden, variantCount, edit
       <td>
         <div className={(variantCount < 2) ? "solo-variant" : "variant-name"}>
           <span>
-            {`${variant.name} ${variant.schedule}`}
+            {variant.name}
           </span>
         </div>
       </td>

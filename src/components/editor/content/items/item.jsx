@@ -7,6 +7,7 @@ export default function Item({editMode, item, itemAvailable, updateLocalStorage,
       <td className="item-name">
         <span>
           {item.name}
+          <em className={(editMode !== 'availability') ? 'hidden' : 'availability-ratio'}>{`${itemAvailable} / ${variantCount}`}</em>
         </span>
 
         <span className={(editMode === 'time schedule') ? 'hidden' : 'variant-toggle'} onClick={() => setVariantVisibility(item)}>
@@ -18,7 +19,7 @@ export default function Item({editMode, item, itemAvailable, updateLocalStorage,
 
       <td className="availability-toggle">
         <span>
-          {editMode === 'availability' && <ToggleSwitch item={item.name} checked={itemAvailable} updateLocalStorage={updateLocalStorage} global={true} />}
+          {editMode === 'availability' && <ToggleSwitch item={item.name} checked={itemAvailable>0} updateLocalStorage={updateLocalStorage} global={true} />}
         </span>
       </td>
     </tr>

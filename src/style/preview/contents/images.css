@@ -17,7 +17,7 @@
 
 /* GROUP 1 */
 #preview-image-large-a1 {
-  background-image: url('../../../assets/images/menu_group3/variety_pasta.jpg');
+  background-image: url('../../../assets/images/menu_group1/chicken_fillet_bilao.jpeg');
 }
 
 #preview-image-large-b1 {
@@ -37,67 +37,67 @@
 }
 
 #preview-image-double-c1 {
-  background-image: url('../../../assets/images/menu_group1/rice_bowl_with_fried_siomai.jpg');
+  background-image: url('../../../assets/images/menu_group1/rice_bowl_siomai.jpeg');
 }
 
 #preview-image-double-d1 {
-  background-image: url('../../../assets/images/menu_group1/rice_bowl_with_shanghai.jpg');
+  background-image: url('../../../assets/images/menu_group1/burger_steak_meal.jpeg');
 }
 
 /* GROUP 2 */
 #preview-image-large-a2 {
-
+  background-image: url('../../../assets/images/menu_group2/siomai.jpeg');
 }
 
 #preview-image-large-b2 {
-
+  background-image: url('../../../assets/images/menu_group2/empanada_solo.jpeg');
 }
 
 #preview-image-single-a2 {
-
+  background-image: url('../../../assets/images/menu_group2/maruya_solo.jpeg');
 }
 
 #preview-image-double-a2 {
-
+  background-image: url('../../../assets/images/menu_group2/burger_with_fries.jpg');
 }
 
 #preview-image-double-b2 {
-
+  background-image: url('../../../assets/images/menu_group2/fries_with_juice.jpg');
 }
 
 #preview-image-double-c2 {
-
+  background-image: url('../../../assets/images/menu_group2/chicken_burger.jpeg');
 }
 
 #preview-image-double-d2 {
-
+  background-image: url('../../../assets/images/menu_group2/burger_with_pasta.jpg');
 }
 
 /* GROUP 3 */
 #preview-image-large-a3 {
-
+  background-image: url('../../../assets/images/menu_group3/variety_pasta.jpg');
 }
 
 #preview-image-large-b3 {
-
+  background-image: url('../../../assets/images/menu_group3/carbonara_bilao.jpeg');
 }
 
 #preview-image-single-a3 {
-
-}
-
-#preview-image-single-b3 {
-
+  background-image: url('../../../assets/images/menu_group3/bento_meals.jpeg');
 }
 
 #preview-image-double-a3 {
+  background-image: url('../../../assets/images/menu_group3/palabok_solo.jpg');
+}
 
+#preview-image-double-b3 {
+  background-image: url('../../../assets/images/menu_group3/carbonara_solo.jpeg');
 }
 
 #preview-image-double-c3 {
-
+  background-image: url('../../../assets/images/menu_group2/shake_mango.jpg')
 }
 
 #preview-image-double-d3 {
-
+  background-image: url('../../../assets/images/menu_group2/shake_choco.jpg');
 }

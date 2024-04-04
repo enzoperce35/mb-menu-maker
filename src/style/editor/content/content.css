@@ -19,7 +19,15 @@ td {
   justify-content: space-between;
 }
 
-.variant-toggle {
+.availability-ratio {
+  margin-left: 2vw;
+  font-style: normal;
+  font-size: smaller;
+  color: rgb(218, 67, 62);
+
+}
+
+.availability-toggle {
   font-weight: bolder;
 }
 

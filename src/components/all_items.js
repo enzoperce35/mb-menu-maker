@@ -104,9 +104,14 @@ export const allItems = [
       'large sour & cream': {code: 'LSC', price: 65}}},
 
   { category: 'Siomai',
-    name: 'Siomai',
+    name: 'Steamed',
     group: 2,
     variants: { '4pcs': {price: 30}, '6pcs': {price: 45}, '8pcs': {price: 60}, tub: {price: 100} }},
+
+  { category: 'Siomai',
+    name: 'Fried',
+    group: 2,
+    variants: { '4pcs': {price: 35}, '6pcs': {price: 50}, '8pcs': {price: 65} }},
 
   { category: 'Empanada',
     name: 'Empanada',
@@ -118,18 +123,11 @@ export const allItems = [
     group: 2,
     variants: { regular: {price: 50}, bites: {price: 120} }},
 
-  { category: 'Milk Shake',
-    name: 'Milk Shake',
-    group: 2,
-    variants: { chocolate: {code: 'MS-Choco', price: 50}, mango: {code: 'MS-Mango', price: 50}, strawberry: {code: 'MS-Berry', price: 50}, 'cookies and cream': {code: 'MS-Cream', price: 50} }},
-
   { category: 'Add-Ons',
     name: 'Add-Ons',
     group: 2,
     variants: {
-      coleslaw: {price: 20},
-      'pearl': {price: 10} }},
-
+      coleslaw: {price: 20} }},
 
   //GROUP 3
   { category: 'Pasta',
@@ -187,9 +185,15 @@ export const allItems = [
       '1L Iced Tea': {price: 60},
       '1L Orange Juice': {price: 60} }},
 
+  { category: 'Milk Shake',
+    name: 'Milk Shake',
+    group: 3,
+    variants: { chocolate: {code: 'MS-Choco', price: 50}, mango: {code: 'MS-Mango', price: 50}, strawberry: {code: 'MS-Berry', price: 50}, 'cookies and cream': {code: 'MS-Cream', price: 50} }},
+
   { category: 'Add-Ons',
     name: 'Add-Ons',
     group: 3,
-    variants: { 'Garlic Bread': {price: 15} }},
-
+    variants: {
+    'Garlic Bread': {price: 15},
+    'pearl': {price: 10} }}
 ]

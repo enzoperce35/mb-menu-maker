@@ -10,7 +10,7 @@ export default function Items({group, focus, editMode}) {
   const [menu, setMenu] = useState({items: getItems(group), updated: false});
   const [variantsHidden, setVariantsHidden] = useState([]);
 
-  const updateLocalStorage = (id, available, global) => {console.log(id)
+  const updateLocalStorage = (id, available, global) => {
     if (global) {
       let item = allItems.find(i => i.name === id)
 
@@ -47,7 +47,7 @@ export default function Items({group, focus, editMode}) {
     <>
       {menu.items.map((item) => {
         let variants = [];
-        let itemAvailable = false;
+        let itemAvailable = 0;
         let variantsAreHidden = variantsHidden.includes(item.name);
 
         Object.entries(item.variants).map(variant => {
@@ -56,7 +56,7 @@ export default function Items({group, focus, editMode}) {
           const variantSchedule = sessionStorage.getItem(variantId);
           const variantIsAvailable = localStorage.getItem(variantId) === null;
 
-          if (variantIsAvailable) itemAvailable = true;
+          if (variantIsAvailable) itemAvailable += 1;
 
           variants.push({name: key, id: variantId, price: value.price, available: variantIsAvailable, schedule: variantSchedule})
         })
