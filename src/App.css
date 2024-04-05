@@ -9,9 +9,15 @@
   cursor: pointer;
 }
 
-#container {
+#root {
   width: 100vw;
+  height: 100vh;
   align-content: center;
+}
+
+#container {
+  margin: auto;
+  width: 30em;
 }
 
 .hidden {

@@ -2,6 +2,7 @@
 @import "./contents/content.css";
 
 #preview-container {
+  width: 100%;
   display: grid;
-  grid-template-rows: 10vh auto;
+  grid-template-rows: 15vh auto;
 }

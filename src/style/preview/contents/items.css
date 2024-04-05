@@ -11,7 +11,7 @@
   font-weight: bold;
   grid-template-rows: auto;
   gap: 5px;
-  padding: 0 2vw 3vh ;
+  padding: 0 2em 3vh ;
   /*height: 72vh;   adjusts the height of the menu prices */
 }
 
@@ -21,11 +21,14 @@
 }
 
 .preview-category {
+  width: fit-content;
   margin-top: 10px;
+  color: brown;
+  font-style: italic;
 }
 
 .preview-variant {
-  padding: 0 2vw;
+
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
@@ -39,6 +42,10 @@
   font-weight: bolder;
   margin-left: 5px;
   background-image: linear-gradient(to top left, rgb(238, 148, 14), rgb(248, 227, 201));
+}
+
+.preview-variant > :first-child {
+  margin-left: 10px;
 }
 
 .preview-variant > :nth-child(2) {

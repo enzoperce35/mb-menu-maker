@@ -2,6 +2,7 @@
 @import "./content/content.css";
 
 #editor {
+  width: 100%;
   display: grid;
   grid-template-rows: 18vh 82vh;
 }
