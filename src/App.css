@@ -18,7 +18,7 @@
 
 #container {
   margin: auto;
-  min-width: 30em;
+  width: 30em;
   max-width: 30em;
 }
 

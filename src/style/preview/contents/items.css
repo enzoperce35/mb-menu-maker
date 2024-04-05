@@ -11,7 +11,7 @@
   font-weight: bold;
   grid-template-rows: auto;
   gap: 5px;
-  padding: 0 2em 3vh ;
+  padding: 3vh 2em 3vh ;
   /*height: 72vh;   adjusts the height of the menu prices */
 }
 
@@ -35,7 +35,6 @@
 
 .variant-schedule {
   border: 2px solid maroon;
-
   border-radius: 3px;
   padding: 0 4px;
   font-size: smaller;
