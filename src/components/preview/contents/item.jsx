@@ -4,22 +4,18 @@ const getItems = (group) => allItems.filter(item => item.group === group);
 
 export default function Item({group, focus}) {
   let newCategory = '';
-  let categoryWasNotSet = true;
+  let showableItems = 0;
 
    return (
     <>
       { getItems(group).map((item) => {
-        let changeCategory = false;
         let variants = [];
-        let itemShowable = false;
+        let itemShowable = false;  // the item can be shown
 
         if (newCategory !== item.category) {
-          newCategory = item.category
+          newCategory = item.category;
 
-          changeCategory = true;
-          categoryWasNotSet = true;
-        } else {
-          changeCategory = false
+          showableItems = 0;
         }
 
         Object.entries(item.variants).map(variant => {
@@ -33,13 +29,17 @@ export default function Item({group, focus}) {
           variants.push({name: key, id: variantId, price: value.price, available: variantIsAvailable, schedule: variantSchedule})
         })
 
-        if (itemShowable) categoryWasNotSet = false;
-
-        if (!itemShowable && !categoryWasNotSet) return;
+        if (!itemShowable) {
+          return
+        } else {
+          showableItems += 1;
+        }
 
         return (
           <div className={focus === group ? "preview-item" : "hidden"} >
-            <h4 className={categoryWasNotSet || (changeCategory && itemShowable)  ? "preview-category" : "hidden"}>{item.category}</h4>
+            <h4 className={(showableItems === 1 && itemShowable) ? "preview-category" : "hidden"}>
+              {item.category}
+            </h4>
 
             { variants.map(variant => (
 

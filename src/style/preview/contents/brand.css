@@ -36,6 +36,10 @@
 }
 
 #preview-brand h5 {
+  width: fit-content;
+  height: 100%;
+  margin: auto;
+  padding: 7% 0;
   font-family: 'Brand';
   font-size: xx-large;
   font-weight: bolder;
