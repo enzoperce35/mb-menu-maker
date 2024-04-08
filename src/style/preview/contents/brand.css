@@ -14,8 +14,6 @@
   /* background-image: linear-gradient(to top left, #FFEB61, #F6F7F9); */
   background-image: linear-gradient(to top left,#F7D655, #F7EAD4);
   position: relative;
-  text-align: center;
-  align-content: center;
   box-shadow: 0 4px 15px -5px black;
 }
 
@@ -38,8 +36,10 @@
 #preview-brand h5 {
   width: fit-content;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: auto;
-  padding: 7% 0;
   font-family: 'Brand';
   font-size: xx-large;
   font-weight: bolder;
