@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Brand';
   src:
+    url('../../../assets/fonts/Cinzel.ttf'),
     url('../../../assets/fonts/Allura-Regular.ttf'),
     url('../../../assets/fonts/Pacifico-Regular.ttf'),
     url('../../../assets/fonts/EBGaramond-VariableFont_wght.ttf'),
@@ -41,9 +42,8 @@
   justify-content: center;
   margin: auto;
   font-family: 'Brand';
-  font-size: xx-large;
+  font-size: 1.6em;
   font-weight: bolder;
-  color: green;
 }
 
 #print-button {

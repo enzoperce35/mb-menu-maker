@@ -1,3 +1,34 @@
+@font-face {
+  font-family: 'Menu Header';
+  src:
+  url('../../../assets/fonts/ClickerScript-Regular.ttf'),
+  url('../../../assets/fonts/Parisienne-Regular.ttf'),
+  url('../../../assets/fonts/FleurDeLeah-Regular.ttf'),
+    url('../../../assets/fonts/Pacifico-Regular.ttf'),
+    url('../../../assets/fonts/EBGaramond-VariableFont_wght.ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Category Header';
+  src:
+    url('../../../assets/fonts/Honk.ttf'),
+    url('../../../assets/fonts/Allura-Regular.ttf'),
+    url('../../../assets/fonts/Pacifico-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Item Name';
+  src:
+    url('../../../assets/fonts/Prompt-Light.ttf'),
+    url('../../../assets/fonts/Honk.ttf'),
+    url('../../../assets/fonts/Allura-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #preview-left {
   min-height: 50vh;
   max-height: max-content;
@@ -7,28 +38,34 @@
 
 .preview-items {
   display: grid;
+  font-family: 'Item Name';
   font-size: .60em;
   font-weight: bold;
+  color: #130138;
   grid-template-rows: auto;
   gap: 5px;
   padding: 3vh 2em 3vh ;
   /*height: 72vh;   adjusts the height of the menu prices */
 }
-
+/* #9F2305 */
 .preview-items h2 {
+  font-family: 'Menu Header';
+  color: #9F2305;
+  font-size: 2.5em;
   height: 4vh;
-  align-content: end;
+  justify-self: center;
 }
 
 .preview-category {
+  font-family: 'Category Header';
+  font-size: 1.5em;
   width: fit-content;
   margin-top: 10px;
-  color: brown;
+
   font-style: italic;
 }
 
 .preview-variant {
-
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
