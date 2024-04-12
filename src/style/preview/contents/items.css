@@ -44,16 +44,20 @@
   color: #130138;
   grid-template-rows: auto;
   gap: 5px;
-  padding: 3vh 2em 3vh ;
+  padding: 3vh 2em;
   /*height: 72vh;   adjusts the height of the menu prices */
 }
 /* #9F2305 */
 .preview-items h2 {
   font-family: 'Menu Header';
-  color: #9F2305;
   font-size: 2.5em;
   height: 4vh;
   justify-self: center;
+}
+
+.preview-items h2 span {
+  font-style: normal;
+  font-size: .50em;
 }
 
 .preview-category {
@@ -61,13 +65,22 @@
   font-size: 1.5em;
   width: fit-content;
   margin-top: 10px;
-
   font-style: italic;
 }
 
 .preview-variant {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: .60fr 3fr .40fr;
+}
+
+.preview-variant-no-code {
+  display: grid;
+  grid-template-columns: 3fr .40fr;
+}
+
+.preview-variant :last-child,
+.preview-variant-no-code :last-child {
+  justify-self: end;
 }
 
 .variant-schedule {
@@ -80,10 +93,7 @@
   background-image: linear-gradient(to top left, rgb(238, 148, 14), rgb(248, 227, 201));
 }
 
-.preview-variant > :first-child {
+.preview-variant > :first-child,
+.preview-variant-no-code > :nth-child(2) {
   margin-left: 10px;
-}
-
-.preview-variant > :nth-child(2) {
-  margin-left: auto;
 }

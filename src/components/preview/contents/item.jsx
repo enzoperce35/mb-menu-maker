@@ -26,7 +26,7 @@ export default function Item({group, focus}) {
 
           if (variantIsAvailable || variantSchedule !== null) itemShowable = true;
 
-          variants.push({name: key, id: variantId, price: value.price, available: variantIsAvailable, schedule: variantSchedule})
+          variants.push({name: key, code: value.code, id: variantId, price: value.price, available: variantIsAvailable, schedule: variantSchedule})
         })
 
         if (!itemShowable) {
@@ -43,7 +43,9 @@ export default function Item({group, focus}) {
 
             { variants.map(variant => (
 
-              <div className={variant.schedule !== null || variant.available ? "preview-variant" : "hidden"}>
+              <div className={variant.schedule !== null || variant.available ? ( variant.code === undefined ? 'preview-variant-no-code' : 'preview-variant') : "hidden"}>
+                <span className={variant.code === undefined ? 'hidden' : 'variant-code'}>{`${variant.code === undefined ? '~' : variant.code}`}</span>
+
                 <span>
                   {`${(item.category === item.name) ? "" : item.name} ${(variant.name === item.name) ? "" : variant.name}`}
 
