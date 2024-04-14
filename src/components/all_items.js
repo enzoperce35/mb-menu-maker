@@ -18,13 +18,13 @@ export const allItems = [
       'w/ 4pcs Steamed Siomai': {code: 'F2', price: 90},
       'w/ 4pcs Fried Siomai': {code: 'F3', price: 90},
       'w/ Breaded Porkchop': {code: 'F4', price: 100},
-      'w/ 4pcs Shanghai (bite size)': {code: 'F5', price: 90} }},
+      'w/ 4pcs Shanghai': {code: 'F5', price: 90} }},
 
   { category: 'Rice Meals',
     name: 'Rice Bowl',
     group: 1,
     variants: {
-      'w/ 4pcs Shanghai (bite size)': {code: 'R1', price: 50},
+      'w/ 4pcs Shanghai': {code: 'R1', price: 50},
       'w/ 5pcs Steamed Siomai': {code: 'R2', price: 60},
       'w/ 5pcs Fried Siomai': {code: 'R3', price: 60} }},
 
@@ -54,9 +54,9 @@ export const allItems = [
     name: 'Shanghai',
     group: 1,
     variants: {
-      '12pcs (bite size)': {code: '', price: 85},
-      '24pcs (bite size)': {code: '', price: 160},
-      '36pcs (bite size)': {code: '', price: 240} }},
+      '12pcs': {code: '', price: 85},
+      '24pcs': {code: '', price: 160},
+      '36pcs': {code: '', price: 240} }},
 
   { category: 'Ala Carte',
     name: 'Chicken Fillet',
@@ -75,25 +75,27 @@ export const allItems = [
   { category: 'Ala Carte',
     name: 'Chicken Pop Shots',
     group: 1,
-    variants: { 'regular': {code: '', price: 80},  spicy: {code: '', price: 80} }},
+    variants: { regular: {code: '', price: 80},  spicy: {code: '', price: 80} }},
 
-  { category: 'Add-Ons',
-    name: 'Add-Ons',
+  { category: 'Extra',
+    name: 'Extra',
     group: 1,
     variants: {
-        'bbq sauce': {price: 20},
-        'honey soy garlic sauce': {price: 20},
-        'buffalo sauce': {price: 20},
-        'orange sauce': {price: 20} }},
+      'Plain Rice': {price: 15},
+      'Fried Rice': {price: 20},
+      'gravy sauce': {price: 20},
+      'gravy mushroom sauce': {price: 20},
+      'bbq sauce': {price: 20},
+      'honey soy garlic sauce': {price: 20},
+      'buffalo sauce': {price: 20},
+      'orange sauce': {price: 20} }},
 
   { category: 'Add-Ons',
         name: 'Add-Ons',
         group: 1,
         variants: {
           'Fried Egg': {price: 15},
-          'Plain Rice': {price: 15},
-          'Fried Rice': {price: 20},
-          veggies: {price: 20} }},
+          Veggies: {price: 20} }},
 
   // GROUP 2
   { category: 'Burger',
@@ -122,8 +124,8 @@ export const allItems = [
     variants: {
       'regular': {code: '', price: 35},
       'large': {code: '', price: 60},
-      'w/ iced tea': {code: 'J1', price: 50},
-      'w/ orange juice': {code: 'J2', price: 50} }},
+      'w/ Iced Tea': {code: 'J1', price: 50},
+      'w/ Orange Juice': {code: 'J2', price: 50} }},
 
   { category: 'Fries',
     name: 'Cheese',
@@ -131,8 +133,8 @@ export const allItems = [
     variants: {
       'regular': {code: '', price: 40},
       'large': {code: '', price: 65},
-      'w/ iced tea': {code: 'J3', price: 50},
-      'w/ orange juice': {code: 'J4', price: 50} }},
+      'w/ Iced Tea': {code: 'J3', price: 50},
+      'w/ Orange Juice': {code: 'J4', price: 50} }},
 
   { category: 'Fries',
     name: 'BBQ',
@@ -140,8 +142,8 @@ export const allItems = [
     variants: {
       'regular': {code: '', price: 40},
       'large': {code: '', price: 65},
-      'w/ iced tea': {code: 'J5', price: 50},
-      'w/ orange juice': {code: 'J6', price: 50} }},
+      'w/ Iced Tea': {code: 'J5', price: 50},
+      'w/ Orange Juice': {code: 'J6', price: 50} }},
 
   { category: 'Fries',
     name: 'Sour Cream',
@@ -149,8 +151,8 @@ export const allItems = [
     variants: {
       'regular': {code: '', price: 40},
       'large': {code: '', price: 65},
-      'w/ iced tea': {code: 'J7', price: 50},
-      'w/ orange juice': {code: 'J8', price: 50} }},
+      'w/ Iced Tea': {code: 'J7', price: 50},
+      'w/ Orange Juice': {code: 'J8', price: 50} }},
 
   { category: 'Siomai',
     name: 'Steamed',
@@ -172,10 +174,11 @@ export const allItems = [
     group: 2,
     variants: { regular: {price: 50}, bites: {price: 120} }},
 
-  { category: 'Add-Ons',
-    name: 'Add-Ons',
+  { category: 'Extra',
+    name: 'Extra',
     group: 2,
     variants: {
+      'Salted Fries (60g)': {price: 25},
       coleslaw: {price: 20} }},
 
   //GROUP 3
