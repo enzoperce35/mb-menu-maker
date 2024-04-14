@@ -17,13 +17,14 @@ export const allItems = [
       Solo: {code: 'F1', price: 60},
       'w/ 4pcs Steamed Siomai': {code: 'F2', price: 90},
       'w/ 4pcs Fried Siomai': {code: 'F3', price: 90},
-      'w/ 6pcs Shanghai(bite size)': {code: 'F4', price: 90} }},
+      'w/ Breaded Porkchop': {code: 'F4', price: 100},
+      'w/ 4pcs Shanghai (bite size)': {code: 'F5', price: 90} }},
 
   { category: 'Rice Meals',
     name: 'Rice Bowl',
     group: 1,
     variants: {
-      'w/ 6pcs Shanghai(bite size)': {code: 'R1', price: 50},
+      'w/ 4pcs Shanghai (bite size)': {code: 'R1', price: 50},
       'w/ 5pcs Steamed Siomai': {code: 'R2', price: 60},
       'w/ 5pcs Fried Siomai': {code: 'R3', price: 60} }},
 
@@ -32,7 +33,8 @@ export const allItems = [
     group: 1,
     variants: {
       Tapsilog: {code: '', price: 90},
-      Porksilog: {code: '',price: 90},
+      Porksilog: {code: '', price: 90},
+      Cornsilog: {code: '', price: 80},
       Chixilog: {code: '',price: 90},
       Malingsilog: {code: '',price: 70},
       Hotsilog: {code: '',price: 70} }},
@@ -44,14 +46,17 @@ export const allItems = [
     variants: { 'Breaded Porkchop w/ BBQ sauce': {code: 'A1', price: 70} }},
 
   { category: 'Ala Carte',
-    name: '5pcs Pork Shanghai',
-    group: 1,
-    variants: { '5pcs Shanghai(reg size)': {code: 'A2', price: 55} }},
-
-  { category: 'Ala Carte',
     name: 'Burger Steak In Mushroom Sauce',
     group: 1,
-    variants: { 'Burger Steak In Mushroom Sauce': {code: 'A3', price: 80} }},
+    variants: { 'Burger Steak In Mushroom Sauce': {code: 'A2', price: 80} }},
+
+  { category: 'Ala Carte',
+    name: 'Shanghai',
+    group: 1,
+    variants: {
+      '12pcs (bite size)': {code: '', price: 85},
+      '24pcs (bite size)': {code: '', price: 160},
+      '36pcs (bite size)': {code: '', price: 240} }},
 
   { category: 'Ala Carte',
     name: 'Chicken Fillet',
@@ -70,7 +75,7 @@ export const allItems = [
   { category: 'Ala Carte',
     name: 'Chicken Pop Shots',
     group: 1,
-    variants: { regular: {code: '', price: 80},  spicy: {code: '', price: 85} }},
+    variants: { 'regular': {code: '', price: 80},  spicy: {code: '', price: 80} }},
 
   { category: 'Add-Ons',
     name: 'Add-Ons',
@@ -231,12 +236,19 @@ export const allItems = [
   { category: 'Milk Shake',
     name: 'Milk Shake',
     group: 3,
-    variants: { chocolate: {price: 50}, mango: {price: 50}, strawberry: {price: 50}, 'cookies and cream': {price: 50} }},
+    variants: {
+      chocolate: {price: 50},
+      mango: {price: 50},
+      strawberry: {price: 50},
+      'coffee crumble': {price: 50},
+      'cookies and cream': {price: 50} }},
 
   { category: 'Add-Ons',
     name: 'Add-Ons',
     group: 3,
     variants: {
     'Garlic Bread': {price: 15},
-    'pearl': {price: 10} }}
+    'Shake Toppings': {price: 5},
+    'Shake Syrup': {price: 5},
+    'Shake Pearl': {price: 10} }}
 ]

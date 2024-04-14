@@ -35,7 +35,7 @@ export default function Contents({focus, group}) {
 
           <img src={downloadIcon} data-html2canvas-ignore={true} id={"print-button"} onClick={handleDownloadImage}></img>
 
-          <h5>Madonna's</h5>
+          <h5>Ma' donna</h5>
         </div>
 
         <div className="preview-items">
