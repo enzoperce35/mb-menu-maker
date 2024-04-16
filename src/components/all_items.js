@@ -185,56 +185,22 @@ export const allItems = [
   { category: 'Pasta',
     name: 'Palabok',
     group: 3,
-    variants: {
-      Solo: {price: 65},
-      'w/ Garlic Bread': {price: 75},
-      'Bilao Small': {price: 350},
-      'Bilao Medium': {price: 500},
-      'Bilao Large': {price: 750},
-      'Bilao XL': {price: 850} }},
+    variants: { Solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
 
   { category: 'Pasta',
     name: 'Spaghetti',
     group: 3,
-    variants: {
-      Solo: {price: 65},
-      'w/ Garlic Bread': {price: 75},
-      'Bilao Small': {price: 350},
-      'Bilao Medium': {price: 500},
-      'Bilao Large': {price: 750},
-      'Bilao XL': {price: 850} }},
+    variants: { Solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
 
   { category: 'Pasta',
     name: 'Carbonara',
     group: 3,
-    variants: {
-      Solo: {price: 65},
-      'w/ Garlic Bread': {price: 75},
-      'Bilao Small': {price: 350},
-      'Bilao Medium': {price: 500},
-      'Bilao Large': {price: 750},
-      'Bilao XL': {price: 850} }},
+    variants: { Solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
 
   { category: 'Pasta',
     name: 'Pansit Bihon',
     group: 3,
-    variants: {
-      Solo: {price: 65},
-      'w/ Garlic Bread': {price: 75},
-      'Bilao Small': {price: 350},
-      'Bilao Medium': {price: 500},
-      'Bilao Large': {price: 750},
-      'Bilao XL': {price: 850} }},
-
-  { category: 'Beverages',
-    name: 'Beverages',
-    group: 3,
-    variants: {
-      '8oz Bottled Water': {price: 10},
-      'Coke Mismo': {price: 20},
-      'Mountain Dew 295ml': {price: 20},
-      '1L Iced Tea': {price: 60},
-      '1L Orange Juice': {price: 60} }},
+    variants: { Solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
 
   { category: 'Milk Shake',
     name: 'Milk Shake',
@@ -245,6 +211,52 @@ export const allItems = [
       strawberry: {price: 50},
       'coffee crumble': {price: 50},
       'cookies and cream': {price: 50} }},
+
+  { category: 'PreOrder Bilao',
+    name: 'Palabok',
+    group: 3,
+    variants: {
+      'Small': {price: 350},
+      'Medium': {price: 500},
+      'Large': {price: 750},
+      'XL': {price: 850} }},
+
+  { category: 'PreOrder Bilao',
+    name: 'Spaghetti',
+    group: 3,
+    variants: {
+      'Small': {price: 350},
+      'Medium': {price: 500},
+      'Large': {price: 750},
+      'XL': {price: 850} }},
+
+  { category: 'PreOrder Bilao',
+    name: 'Carbonara',
+    group: 3,
+    variants: {
+      'Small': {price: 350},
+      'Medium': {price: 500},
+      'Large': {price: 750},
+      'XL': {price: 850} }},
+
+  { category: 'PreOrder Bilao',
+    name: 'Pansit Bihon',
+    group: 3,
+    variants: {
+      'Small': {price: 350},
+      'Medium': {price: 500},
+      'Large': {price: 750},
+      'XL': {price: 850} }},
+
+  { category: 'Beverages',
+    name: 'Beverages',
+    group: 3,
+    variants: {
+      'Bottled Water 350ml': {price: 10},
+      'Coke Mismo': {price: 20},
+      'Mountain Dew 295ml': {price: 20},
+      'Iced Tea 750ml': {price: 60},
+      'Orange Juice 750ml': {price: 60} }},
 
   { category: 'Add-Ons',
     name: 'Add-Ons',
