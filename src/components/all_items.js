@@ -112,11 +112,11 @@ export const allItems = [
     name: 'Chicken Burger',
     group: 2,
     variants: {
-      Solo: {code: 'C1', price: 60},
-      'w/ Fries': {code: 'C2', price: 80},
-      'w/ Spaghetti': {code: 'C3', price: 85},
-      'w/ Carbonara': {code: 'C4', price: 85},
-      'w/ Palabok': {code: 'C5', price: 85} }},
+      Solo: {code: 'C1', price: 55},
+      'w/ Fries': {code: 'C2', price: 75},
+      'w/ Spaghetti': {code: 'C3', price: 90},
+      'w/ Carbonara': {code: 'C4', price: 90},
+      'w/ Palabok': {code: 'C5', price: 90} }},
 
   { category: 'Fries',
     name: 'Salt',
