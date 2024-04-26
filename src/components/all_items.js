@@ -157,12 +157,12 @@ export const allItems = [
   { category: 'Siomai',
     name: 'Steamed',
     group: 2,
-    variants: { '4pcs': {price: 30}, '6pcs': {price: 45}, '8pcs': {price: 60}, tub: {price: 100} }},
+    variants: { '6pcs': {price: 45}, '8pcs': {price: 60}, tub: {price: 100} }},
 
   { category: 'Siomai',
     name: 'Fried',
     group: 2,
-    variants: { '4pcs': {price: 35}, '6pcs': {price: 50}, '8pcs': {price: 65} }},
+    variants: { '6pcs': {price: 50}, '8pcs': {price: 65} }},
 
   { category: 'Empanada',
     name: 'Empanada',
