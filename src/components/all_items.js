@@ -24,7 +24,7 @@ export const allItems = [
     name: 'Rice Bowl',
     group: 1,
     variants: {
-      'w/ 4pcs Shanghai': {code: 'R1', price: 50},
+      'w/ 5pcs Shanghai': {code: 'R1', price: 55},
       'w/ 5pcs Steamed Siomai': {code: 'R2', price: 60},
       'w/ 5pcs Fried Siomai': {code: 'R3', price: 60} }},
 
@@ -55,8 +55,8 @@ export const allItems = [
     group: 1,
     variants: {
       '12pcs': {code: '', price: 85},
-      '24pcs': {code: '', price: 160},
-      '36pcs': {code: '', price: 240} }},
+      '24pcs': {code: '', price: 170},
+      '36pcs': {code: '', price: 250} }},
 
   { category: 'Ala Carte',
     name: 'Chicken Fillet',
