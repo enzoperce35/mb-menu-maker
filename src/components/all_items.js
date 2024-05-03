@@ -35,7 +35,6 @@ export const allItems = [
       Tapsilog: {code: '', price: 90},
       Porksilog: {code: '', price: 90},
       Cornsilog: {code: '', price: 80},
-      Chixilog: {code: '',price: 90},
       Malingsilog: {code: '',price: 70},
       Hotsilog: {code: '',price: 70} }},
 
@@ -67,10 +66,9 @@ export const allItems = [
     name: 'Chicken Wings',
     group: 1,
     variants: {
-      '4pcs': {code: '', price: 90},
-      '6pcs': {code: '', price: 135},
-      '10pcs': {code: '', price: 220},
-      '20pcs': {code: '', price: 425} }},
+      '6pcs (honeysoy/buffalo/orange/assorted)': {code: '', price: 145},
+      '10pcs (honeysoy/buffalo/orange/assorted)': {code: '', price: 235},
+      '20pcs (honeysoy/buffalo/orange/assorted)': {code: '', price: 450} }},
 
   { category: 'Ala Carte',
     name: 'Chicken Pop Shots',
