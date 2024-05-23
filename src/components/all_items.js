@@ -164,7 +164,7 @@ export const allItems = [
   { category: 'Siomai',
     name: 'Steamed',
     group: 2,
-    variants: { '6pcs': {price: 45}, '8pcs': {price: 60}, tub: {price: 100} }},
+    variants: { '6pcs': {price: 45}, '8pcs': {price: 60}, 'tub regular': {price: 100}, 'tub spicy': {price: 100} }},
 
   { category: 'Siomai',
     name: 'Fried',
@@ -192,22 +192,22 @@ export const allItems = [
   { category: 'Pasta',
     name: 'Palabok',
     group: 3,
-    variants: { Solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
+    variants: { Solo: {price: 65}, 'w/ 2pcs puto': {price: 75} }},
 
   { category: 'Pasta',
     name: 'Spaghetti',
     group: 3,
-    variants: { Solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
+    variants: { Solo: {price: 65} }, 'w/ 2pcs puto': {price: 75} },
 
   { category: 'Pasta',
     name: 'Carbonara',
     group: 3,
-    variants: { Solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
+    variants: { Solo: {price: 65}, 'w/ 2pcs puto': {price: 75} }},
 
   { category: 'Pasta',
     name: 'Pansit Bihon',
     group: 3,
-    variants: { Solo: {price: 65}, 'w/ Garlic Bread': {price: 75} }},
+    variants: { Solo: {price: 65}, 'w/ 2pcs puto': {price: 75} }},
 
   { category: 'Milk Shake',
     name: 'Milk Shake',
@@ -262,6 +262,7 @@ export const allItems = [
       'Bottled Water 350ml': {price: 10},
       'Coke Mismo': {price: 20},
       'Mountain Dew 295ml': {price: 20},
+      'Black Gulaman 750ml': {price: 60},
       'Iced Tea 750ml': {price: 60},
       'Orange Juice 750ml': {price: 60} }},
 
