@@ -197,7 +197,7 @@ export const allItems = [
   { category: 'Pasta',
     name: 'Spaghetti',
     group: 3,
-    variants: { Solo: {price: 65} }, 'w/ 2pcs puto': {price: 75} },
+    variants: { Solo: {price: 65}, 'w/ 2pcs puto': {price: 75} }},
 
   { category: 'Pasta',
     name: 'Carbonara',
