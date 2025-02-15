@@ -14,7 +14,7 @@ export default function Preview({focus, scroll, switchView}) {
   return (
     <div {...handlers} id="preview-container">
       <div id={"preview-head"} >
-        <span>
+        <span className="scrollers">
           <span onClick={() => scroll('left')} >{'<'}</span>
         </span>
 
@@ -22,7 +22,7 @@ export default function Preview({focus, scroll, switchView}) {
           {`GROUP ${focus}`}
         </h2>
 
-        <span>
+        <span className="scrollers">
           <span onClick={() => scroll('right')}>{'>'}</span>
         </span>
       </div>

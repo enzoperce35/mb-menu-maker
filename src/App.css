@@ -25,3 +25,8 @@
 .hidden {
   display: none;
 }
+
+/* display/hide scrollers */
+.scrollers {
+  display: none;
+}
