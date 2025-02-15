@@ -1,5 +1,6 @@
 import Preview from './components/preview/preview';
 import Editor from './components/editor/editor';
+import { useSwipeable } from 'react-swipeable';
 import { useState } from "react";
 import './App.css'
 
@@ -22,6 +23,14 @@ export default function App() {
       setFocus(newFocus)
     }
   }
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => scroll('right'),
+    onSwipedRight: () => scroll('left'),
+    //swipeDuration: 300,
+    preventScrollOnSwipe: true,
+    trackMouse: true
+  });
 
   const switchView = () => {
     setShowPreview(showPreview === true ? false : true)
