@@ -1,12 +1,21 @@
 import Contents from "./contents/contents"
+import { useSwipeable } from "react-swipeable"
 
 export default function Preview({focus, scroll, switchView}) {
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => scroll('left'),
+    onSwipedRight: () => scroll('right'),
+    //swipeDuration: 500,
+    preventScrollOnSwipe: true,
+    trackMouse: true
+  });
+
   return (
-    <div id="preview-container">
+    <div {...handlers} id="preview-container">
       <div id={"preview-head"} >
         <span>
-          <span onClick={() => scroll('left') }>{'<'}</span>
+          <span onClick={() => scroll('left')} >{'<'}</span>
         </span>
 
         <h2 onClick={() => switchView()}>
