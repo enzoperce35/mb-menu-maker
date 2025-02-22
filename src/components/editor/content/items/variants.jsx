@@ -1,28 +1,22 @@
 import ToggleSwitch from "../toggleswitch";
-import ScheduleSetter from "../schedule_setter";
 
-export default function Variants({variant, variantsAreHidden, variantCount, editMode, updateLocalStorage, updateSessionStorage}) {
-
-  if (editMode === 'time schedule') variantsAreHidden = true;
+export default function Variants({variantName, variantValue, itemName, singleVariant}) {
+  const variantId = `${itemName}${variantName}`;
+  const variantIsAvailable = localStorage.getItem(variantId) === null;
 
   return (
-    <tr key={variant.id} className={(variantsAreHidden || variantCount < 2) ? "menu-item" : "hidden"}>
-      <td>
-        <div className={(variantCount < 2) ? "solo-variant" : "variant-name"}>
-          <span>
-            {variant.name}
-          </span>
-        </div>
+    <tr key={variantId} className={"menu-item"}>
+      <td className={singleVariant ? '' : 'multi-variant'}>
+        {variantName}
       </td>
 
       <td className={'variant-price'}>
-        <span>{variant.price}</span>
+        <span>{variantValue.price}</span>
       </td>
 
       <td className="availability-toggle">
         <span>
-          { editMode === 'availability' && <ToggleSwitch item={variant.id} checked={variant.available} updateLocalStorage={updateLocalStorage} />}
-          { editMode === 'time schedule' && <ScheduleSetter item={variant.id} updateSessionStorage={updateSessionStorage} schedule={`${variant.schedule}`} />}
+          <ToggleSwitch itemId={variantId} checked={variantIsAvailable}/>
         </span>
       </td>
     </tr>

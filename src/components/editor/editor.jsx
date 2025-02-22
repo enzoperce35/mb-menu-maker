@@ -1,27 +1,20 @@
-import { useState } from "react"
-import Header from "./header"
-import Content from "./content/content"
-import { useSwipeable } from "react-swipeable";
+import Items from "./content/items/items";
 
-export default function Editor({focus, scroll, switchView}) {
-  const [editMode, setEditMode] = useState('availability');
-
-  const modeSwitch = () => {
-    setEditMode(editMode === 'availability' ? 'time schedule' : 'availability')
-  }
-
-  const handlers = useSwipeable({
-    onSwipedLeft: () => scroll('right'),
-    onSwipedRight: () => scroll('left'),
-    swipeDuration: 300,
-    preventScrollOnSwipe: true,
-    trackMouse: true
-  });
-
+export default function Editor({focus}) {
+  
   return (
-    <div {...handlers} id={"editor"}>
-      <Header focus={focus} scroll={scroll} switchView={switchView}/>
-      <Content focus={focus} editMode={editMode} modeSwitch={modeSwitch} />
-    </div>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <Items group={1} focus={focus}/>
+      <Items group={2} focus={focus}/>
+      <Items group={3} focus={focus}/>
+    </table>
   )
 }

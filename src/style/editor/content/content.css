@@ -1,5 +1,4 @@
 @import "./toggleswitch.css";
-@import "./schedule_setter.css";
 
 .menu-container {
   background-color: antiquewhite;
@@ -12,6 +11,10 @@ table {
 
 td {
   padding: 15px;
+}
+
+.multi-variant {
+  padding-left: 5vw;
 }
 
 .item-name {

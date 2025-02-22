@@ -1,12 +1,21 @@
 import React from "react";
+import { updateVariants, updateItemVariants } from "../../storage";
 
-const ToggleSwitch = ({item, checked, updateLocalStorage, global=false}) => {
+const ToggleSwitch = ({itemId, checked, motherItem=false}) => {
+  
   return (
     <div className="container">
       <div className="toggle-switch">
-        <input type="checkbox" className="checkbox" name={item} id={item} checked={checked} onChange={() => updateLocalStorage(item, checked, global)} />
+        <input
+          type="checkbox"
+          className="checkbox"
+          name={itemId}
+          id={itemId}
+          checked={checked}
+          onChange={() => motherItem ? updateItemVariants(itemId, checked) : updateVariants(itemId, checked)}
+        />
 
-        <label className="label" htmlFor={item}>
+        <label className="label" htmlFor={itemId}>
           <span className="inner" />
           <span className="switch" />
         </label>

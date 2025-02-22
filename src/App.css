@@ -20,13 +20,43 @@
   margin: auto;
   width: 30em;
   max-width: 30em;
+  grid-template-rows: auto auto;
+}
+
+#nav {
+  height: 5vh;
+  background-color: aquamarine;
 }
 
 .hidden {
   display: none;
 }
 
+#header {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 15vh auto;
+}
+
+#navigator {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#navigator h2 {
+  font-size: 2em;
+  margin: auto;
+  font-weight: bold;
+}
+
+#navigator span {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
 /* display/hide scrollers */
-.scrollers {
+.scroller {
   display: none;
 }
