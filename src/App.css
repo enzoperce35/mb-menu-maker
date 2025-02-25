@@ -1,6 +1,7 @@
 @import "./style/editor/editor.css";
 @import "./style/editor/form.css";
 @import "./style/preview/preview.css";
+@import "./style/initial_view/initial.css";
 
 * {
   margin: 0;

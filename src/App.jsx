@@ -1,5 +1,5 @@
 import { useSwipeable } from 'react-swipeable';
-import InitialView from './components/initial_view';
+import InitialView from './components/initial_view/initial_view';
 import Preview from './components/preview/preview';
 import Editor from './components/editor/editor';
 import { useState } from "react";

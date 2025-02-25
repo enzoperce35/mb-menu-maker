@@ -12,7 +12,11 @@ const ToggleSwitch = ({itemId, checked, motherItem=false}) => {
           name={itemId}
           id={itemId}
           checked={checked}
-          onChange={() => motherItem ? updateItemVariants(itemId, checked) : updateVariants(itemId, checked)}
+          onChange={function() {
+            if (motherItem === null) return
+            
+            return motherItem ? updateItemVariants(itemId, checked) : updateVariants(itemId, checked)
+          }}
         />
 
         <label className="label" htmlFor={itemId}>
