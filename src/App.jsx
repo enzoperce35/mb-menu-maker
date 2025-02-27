@@ -1,5 +1,6 @@
 import { useSwipeable } from 'react-swipeable';
 import InitialView from './components/initial_view/initial_view';
+import TextView from './components/text_view/text_view';
 import Preview from './components/preview/preview';
 import Editor from './components/editor/editor';
 import { useState } from "react";
@@ -36,7 +37,7 @@ export default function App() {
       return `GROUP ${focus}`
     }
     else {
-      return 'Check Items'
+      return view === 'primary' ? 'Check Items' : 'Text Menu'
     }
   };
 
@@ -55,9 +56,10 @@ export default function App() {
       </div>
       
       <div>
-        {focus === 0 && <InitialView />}
-        {view === 'secondary' && focus > 0 && <Preview focus={focus}/>}
+        {view === 'secondary' && focus === 0 && <TextView />}
+        {view === 'primary' && focus === 0 && <InitialView />}
         {view === 'primary' && focus > 0 && <Editor focus={focus}/>}
+        {view === 'secondary' && focus > 0 && <Preview focus={focus}/>}
       </div>
     </div>
   )

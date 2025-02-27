@@ -1,6 +1,6 @@
 import { allItems } from "../all_items";
 
-let affiliateValues = ['Breaded porkchop', 'Beef patty', 'Chicken patty', 'Chaofan', 'Steamed siomai', 'Fried siomai', 'Shanghai', 'Fries', 'Spaghetti', 'Carbonara', 'Palabok', 'Bihon' ]
+let affiliateValues = ['Breaded porkchop', 'Beef patty', 'Chicken patty', 'Chaofan', 'Steamed siomai', 'Fried siomai', 'Shanghai', 'Fries', 'Spaghetti', 'Carbonara', 'Palabok', 'Bihon', 'Puto' ]
 
 function getAffiliates() {
   return affiliateValues.map(affiliate => {

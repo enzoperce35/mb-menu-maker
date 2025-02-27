@@ -1,19 +1,24 @@
-const affiliates = ['Breaded porkchop', 'Beef patty', 'Chicken patty', 'Chaofan', 'Steamed siomai', 'Fried siomai', 'Shanghai', 'Fries', 'Spaghetti', 'Carbonara', 'Palabok', 'Bihon' ]
-
 export const allItems = [
   // GROUP 1
-  { category: 'Rice Meals',
-    name: 'Breaded Porkchop w/ Rice and Veggies',
+  { category: 'Meals',
+    name: 'Breaded Porkchop',
+    display: true,
     group: 1,
-    variants: { 'Breaded Porkchop w/ Rice and Veggies': {code: 'M1', price: 100, affiliate: ['Breaded porkchop']} }},
-
-  { category: 'Rice Meals',
-    name: 'Burger Steak in Mushroom Sauce w/ Rice',
+    variants: {
+      'w/ BBQ sauce': {code: 'A1', price: 70, affiliate: ['Breaded porkchop']},
+      'w/ Rice, Veggies & BBQ sauce': {code: 'M1', price: 100, affiliate: ['Breaded porkchop']} }},
+      
+  { category: 'Meals',
+    name: 'Burger Steak',
+    display: true,
     group: 1,
-    variants: { 'Burger Steak in Mushroom Sauce w/ Rice': {code: 'M2', price: 100, affiliate: ['Beef patty']} }},
-
-  { category: 'Rice Meals',
+    variants: {
+      'in Mushroom Sauce': {code: 'A2', price: 80, affiliate: ['Beef patty']},
+      'in Mushroom Sauce w/ Rice': {code: 'M2', price: 100, affiliate: ['Beef patty']} }},
+      
+  { category: 'Meals',
     name: 'Chaofan',
+    display: true,
     group: 1,
     variants: {
       'Solo': {code: 'F1', price: 60, affiliate: ['Chaofan']},
@@ -22,50 +27,44 @@ export const allItems = [
       'w/ Breaded Porkchop': {code: 'F4', price: 100, affiliate: ['Chaofan', 'Breaded porkchop']},
       'w/ 4pcs Shanghai': {code: 'F5', price: 90, affiliate: ['Chaofan', 'Shanghai']} }},
 
-  { category: 'Rice Meals',
+  { category: 'Meals',
     name: 'Rice Bowl',
+    display: true,
     group: 1,
     variants: {
       'w/ 5pcs Shanghai': {code: 'R1', price: 55, affiliate: ['Shanghai']},
       'w/ 5pcs Steamed Siomai': {code: 'R2', price: 60, affiliate: ['Steamed siomai']},
       'w/ 5pcs Fried Siomai': {code: 'R3', price: 60, affiliate: ['Fried siomai']} }},
 
-  { category: 'Rice Meals',
+  { category: 'Meals',
     name: 'Silog',
+    display: true,
     group: 1,
     variants: {
-      Tapsilog: {code: '', price: 90},
-      Porksilog: {code: '', price: 90, affiliate: ['Breaded porkchop']},
-      Cornsilog: {code: '', price: 80},
-      Malingsilog: {code: '',price: 70},
-      Hotsilog: {code: '',price: 70} }},
+      'Tapsilog': {code: '', price: 90},
+      'Porksilog': {code: '', price: 90, affiliate: ['Breaded porkchop']},
+      'Cornsilog': {code: '', price: 80},
+      'Malingsilog': {code: '',price: 70},
+      'Hotsilog': {code: '',price: 70} }},
 
-  // A LA CARTE
-  { category: 'Ala Carte',
-    name: 'Breaded Porkchop w/ BBQ sauce',
-    group: 1,
-    variants: { 'Breaded Porkchop w/ BBQ sauce': {code: 'A1', price: 70, affiliate: ['Breaded porkchop']} }},
-
-  { category: 'Ala Carte',
-    name: 'Burger Steak In Mushroom Sauce',
-    group: 1,
-    variants: { 'Burger Steak In Mushroom Sauce': {code: 'A2', price: 80, affiliate: ['Beef patty']} }},
-
-  { category: 'Ala Carte',
+  { category: 'Meals',
     name: 'Shanghai',
+    display: true,
     group: 1,
     variants: {
       '12pcs': {code: '', price: 85, affiliate: ['Shanghai']},
       '24pcs': {code: '', price: 170, affiliate: ['Shanghai']},
       '36pcs': {code: '', price: 250, affiliate: ['Shanghai']} }},
 
-  { category: 'Ala Carte',
+  { category: 'Meals',
     name: 'Chicken Fillet',
+    display: true,
     group: 1,
     variants: { regular: {code: '', price: 90}, large: {code: '', price: 135} }},
 
-  { category: 'Ala Carte',
+  { category: 'Meals',
     name: 'Chicken Wings',
+    display: true,
     group: 1,
     variants: {
       '6pcs Honey Soy Garlic': {code: '', price: 145},
@@ -81,8 +80,9 @@ export const allItems = [
       '20pcs Orange': {code: '', price: 450},
       '20pcs Assorted': {code: '', price: 450} }},
 
-  { category: 'Ala Carte',
+  { category: 'Meals',
     name: 'Chicken Pop Shots',
+    display: true,
     group: 1,
     variants: { regular: {code: '', price: 80},  spicy: {code: '', price: 80} }},
 
@@ -100,43 +100,70 @@ export const allItems = [
       'orange sauce': {price: 20} }},
 
   { category: 'Add-Ons',
-        name: 'Add-Ons',
-        group: 1,
-        variants: {
-          'Fried Egg': {price: 15},
-          Veggies: {price: 20} }},
+    name: 'Add-Ons',
+    group: 1,
+    variants: {
+      'Fried Egg': {price: 15},
+      'Veggies': {price: 20} }},
 
   // GROUP 2
-  { category: 'Pasta',
-    name: 'Pasta',
+  { category: 'Merienda',
+    name: 'Pansit Bihon',
+    display: true,
     group: 2,
     variants: {
-      'Palabok Solo': {price: 65, affiliate: ['Palabok']},
-      'Palabok w/ 2pcs puto': {price: 75, affiliate: ['Palabok', 'Puto']},
-      'Spaghetti Solo': {price: 65, affiliate: ['Spaghetti']},
-      'Spaghetti w/ 2pcs puto': {price: 75, affiliate: ['Spaghetti', 'Puto']},
-      'Carbonara Solo': {price: 65, affiliate: ['Carbonara']},
-      'Carbonara w/ 2pcs puto': {price: 75, affiliate: ['Carbonara', 'Puto']},
-      'Pansit Bihon Solo': {price: 65, affiliate: ['Bihon']},
-      'Pansit Bihon w/ 2pcs puto': {price: 75, affiliate: ['Bihon', 'Puto']} }},
+      'Solo': {price: 65, affiliate: ['Bihon']},
+      'w/ 2pcs puto': {price: 75, affiliate: ['Bihon', 'Puto']} }},
 
-  { category: 'Burger',
-    name: 'Burger',
+  { category: 'Merienda',
+    name: 'Palabok',
+    display: true,
     group: 2,
     variants: {
-      'Beef Burger Solo': {code: 'B1', price: 55, affiliate: ['Beef patty']},
-      'Beef Burger w/ Fries': {code: 'B2', price: 75, affiliate: ['Beef patty', 'Fries']},
-      'Beef Burger w/ Spaghetti': {code: 'B3', price: 90, affiliate: ['Beef patty', 'Spaghetti']},
-      'Beef Burger w/ Carbonara': {code: 'B4',price: 90, affiliate: ['Beef patty', 'Carbonara']},
-      'Beef Burger w/ Palabok': {code: 'B5',price: 90, affiliate: ['Beef patty', 'Palabok']},
-      'Chicken Burger Solo': {code: 'B1', price: 55, affiliate: ['Chicken patty']},
-      'Chicken Burger w/ Fries': {code: 'B2', price: 75, affiliate: ['Chicken patty', 'Fries']},
-      'Chicken Burger w/ Spaghetti': {code: 'B3', price: 90, affiliate: ['Chicken patty', 'Spaghetti']},
-      'Chicken Burger w/ Carbonara': {code: 'B4',price: 90, affiliate: ['Chicken patty', 'Carbonara']},
-      'Chicken Burger w/ Palabok': {code: 'B5',price: 90, affiliate: ['Chicken patty', 'Palabok']} }},
+      'Solo': {price: 65, affiliate: ['Palabok']},
+      'w/ 2pcs puto': {price: 75, affiliate: ['Palabok', 'Puto']} }},
 
-  { category: 'Fries',
+  { category: 'Merienda',
+    name: 'Spaghetti',
+    display: true,
+    group: 2,
+    variants: {
+      'Solo': {price: 65, affiliate: ['Spaghetti']},
+      'w/ 2pcs puto': {price: 75, affiliate: ['Spaghetti', 'Puto']} }},
+
+  { category: 'Merienda',
+    name: 'Carbonara',
+    display: true,
+    group: 2,
+    variants: {
+      'Solo': {price: 65, affiliate: ['Carbonara']},
+      'w/ 2pcs puto': {price: 75, affiliate: ['Carbonara', 'Puto']} }},
+
+  { category: 'Merienda',
+    name: 'Beef Burger',
+    display: true,
+    group: 2,
+    variants: {
+      'Solo': {code: 'B1', price: 55, affiliate: ['Beef patty']},
+      'w/ Fries': {code: 'B2', price: 75, affiliate: ['Beef patty', 'Fries']},
+      'w/ Spaghetti': {code: 'B3', price: 90, affiliate: ['Beef patty', 'Spaghetti']},
+      'w/ Carbonara': {code: 'B4',price: 90, affiliate: ['Beef patty', 'Carbonara']},
+      'w/ Palabok': {code: 'B5',price: 90, affiliate: ['Beef patty', 'Palabok']} }},
+  
+  { category: 'Merienda',
+    name: 'Chicken Burger',
+    display: true,
+    group: 2,
+    variants: {
+      'Solo': {code: 'B1', price: 55, affiliate: ['Chicken patty']},
+      'w/ Fries': {code: 'B2', price: 75, affiliate: ['Chicken patty', 'Fries']},
+      'w/ Spaghetti': {code: 'B3', price: 90, affiliate: ['Chicken patty', 'Spaghetti']},
+      'w/ Carbonara': {code: 'B4',price: 90, affiliate: ['Chicken patty', 'Carbonara']},
+      'w/ Palabok': {code: 'B5',price: 90, affiliate: ['Chicken patty', 'Palabok']} }},
+
+  { category: 'Merienda',
     name: 'Fries',
+    display: true,
     group: 2,
     variants: {
       'Salt regular': {code: '', price: 35, affiliate: ['Fries']},
@@ -156,8 +183,9 @@ export const allItems = [
       'Sour Cream w/ Iced Tea': {code: 'J7', price: 50, affiliate: ['Fries']},
       'Sour Cream w/ Orange Juice': {code: 'J8', price: 50, affiliate: ['Fries']} }},
 
-  { category: 'Siomai',
+  { category: 'Merienda',
     name: 'Siomai',
+    display: true,
     group: 2,
     variants: {
       'Steamed 6pcs': {price: 45, affiliate: ['Steamed siomai']},
@@ -167,15 +195,25 @@ export const allItems = [
       'Fried 6pcs': {price: 45, affiliate: ['Fried siomai']},
       'Fried 8pcs': {price: 60, affiliate: ['Fried siomai']} }},
 
-  { category: 'Empanada',
+  { category: 'Merienda',
     name: 'Empanada',
+    display: true,
     group: 2,
     variants: { '5pcs': {price: 100},  '10pcs': {price: 190} }},
 
-  { category: 'Maruya',
+  { category: 'Merienda',
     name: 'Maruya',
+    display: true,
     group: 2,
     variants: { regular: {price: 50}, bites: {price: 120} }},
+
+  { category: 'Merienda',
+    name: 'Puto',
+    group: 2,
+    variants: {
+      'Medium': {price: 8, affiliate: ['Puto']},
+      'Regular': {price: 13, affiliate: ['Puto']},
+      'Regular ube': {price: 15, affiliate: ['Puto']} }},
 
   { category: 'Beverages',
     name: 'Beverages',
@@ -193,8 +231,8 @@ export const allItems = [
     group: 2,
     variants: {
       'Salted Fries (60g)': {price: 25, affiliate: ['Fries']},
-      coleslaw: {price: 20} }},
-  
+      'coleslaw': {price: 20} }},
+]  
   //{ category: 'Milk Shake',
   //  name: 'Milk Shake',
   //  group: 2,
@@ -242,4 +280,4 @@ export const allItems = [
   //    'Medium': {price: 500},
   //    'Large': {price: 750},
   //    'XL': {price: 850} }},
-]
+

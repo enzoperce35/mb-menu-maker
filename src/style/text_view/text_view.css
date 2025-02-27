@@ -1,0 +1,8 @@
+#text-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#copy-button {
+   padding-top: 10vh;
+}
