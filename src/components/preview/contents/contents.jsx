@@ -39,7 +39,7 @@ export default function Contents({focus, group}) {
         </div>
 
         <div className="preview-items">
-          <h2><span>💖</span> Available Today <span>💖</span></h2>
+          <h2><span>💖</span> {group === 3 ? 'Pre Order Bilao' : 'Available Today'} <span>💖</span></h2>
 
           <Item group={1} focus={focus} />
           <Item group={2} focus={focus} />

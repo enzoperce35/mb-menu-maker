@@ -12,6 +12,8 @@
 @font-face {
   font-family: 'Category Header';
   src:
+    url('../../../assets/fonts/Marcellus.ttf'),
+    url('../../../assets/fonts/Playfair.ttf'),
     url('../../../assets/fonts/Honk.ttf'),
     url('../../../assets/fonts/Allura-Regular.ttf'),
     url('../../../assets/fonts/Pacifico-Regular.ttf');
@@ -40,10 +42,10 @@
   display: grid;
   font-family: 'Item Name';
   font-size: .60em;
-  font-weight: bold;
-  color: #130138;
+  font-weight: bolder;
+  color: #000000;
   grid-template-rows: auto;
-  gap: 5px;
+  gap: 15px;
   padding: 3vh 2em;
   /*height: 72vh;   adjusts the height of the menu prices */
 }
@@ -62,10 +64,10 @@
 
 .preview-category {
   font-family: 'Category Header';
-  font-size: 1.5em;
+  font-size: 1.2em;
   width: fit-content;
   margin-top: 10px;
-  font-style: italic;
+  color: #a20000;
 }
 
 .preview-variant {

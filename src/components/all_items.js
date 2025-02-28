@@ -108,38 +108,6 @@ export const allItems = [
 
   // GROUP 2
   { category: 'Merienda',
-    name: 'Pansit Bihon',
-    display: true,
-    group: 2,
-    variants: {
-      'Solo': {price: 65, affiliate: ['Bihon']},
-      'w/ 2pcs puto': {price: 75, affiliate: ['Bihon', 'Puto']} }},
-
-  { category: 'Merienda',
-    name: 'Palabok',
-    display: true,
-    group: 2,
-    variants: {
-      'Solo': {price: 65, affiliate: ['Palabok']},
-      'w/ 2pcs puto': {price: 75, affiliate: ['Palabok', 'Puto']} }},
-
-  { category: 'Merienda',
-    name: 'Spaghetti',
-    display: true,
-    group: 2,
-    variants: {
-      'Solo': {price: 65, affiliate: ['Spaghetti']},
-      'w/ 2pcs puto': {price: 75, affiliate: ['Spaghetti', 'Puto']} }},
-
-  { category: 'Merienda',
-    name: 'Carbonara',
-    display: true,
-    group: 2,
-    variants: {
-      'Solo': {price: 65, affiliate: ['Carbonara']},
-      'w/ 2pcs puto': {price: 75, affiliate: ['Carbonara', 'Puto']} }},
-
-  { category: 'Merienda',
     name: 'Beef Burger',
     display: true,
     group: 2,
@@ -182,7 +150,7 @@ export const allItems = [
       'Sour Cream large': {code: '', price: 65, affiliate: ['Fries']},
       'Sour Cream w/ Iced Tea': {code: 'J7', price: 50, affiliate: ['Fries']},
       'Sour Cream w/ Orange Juice': {code: 'J8', price: 50, affiliate: ['Fries']} }},
-
+  
   { category: 'Merienda',
     name: 'Siomai',
     display: true,
@@ -194,6 +162,40 @@ export const allItems = [
       'Steamed tub spicy': {price: 100, affiliate: ['Steamed siomai']},
       'Fried 6pcs': {price: 45, affiliate: ['Fried siomai']},
       'Fried 8pcs': {price: 60, affiliate: ['Fried siomai']} }},
+    
+    
+
+  { category: 'Merienda',
+    name: 'Pansit Bihon',
+    display: true,
+    group: 2,
+    variants: {
+      'Solo': {price: 65, affiliate: ['Bihon']},
+      'w/ 2pcs puto': {price: 75, affiliate: ['Bihon', 'Puto']} }},
+
+  { category: 'Merienda',
+    name: 'Palabok',
+    display: true,
+    group: 2,
+    variants: {
+      'Solo': {price: 65, affiliate: ['Palabok']},
+      'w/ 2pcs puto': {price: 75, affiliate: ['Palabok', 'Puto']} }},
+
+  { category: 'Merienda',
+    name: 'Spaghetti',
+    display: true,
+    group: 2,
+    variants: {
+      'Solo': {price: 65, affiliate: ['Spaghetti']},
+      'w/ 2pcs puto': {price: 75, affiliate: ['Spaghetti', 'Puto']} }},
+
+  { category: 'Merienda',
+    name: 'Carbonara',
+    display: true,
+    group: 2,
+    variants: {
+      'Solo': {price: 65, affiliate: ['Carbonara']},
+      'w/ 2pcs puto': {price: 75, affiliate: ['Carbonara', 'Puto']} }},
 
   { category: 'Merienda',
     name: 'Empanada',
@@ -232,7 +234,7 @@ export const allItems = [
     variants: {
       'Salted Fries (60g)': {price: 25, affiliate: ['Fries']},
       'coleslaw': {price: 20} }},
-]  
+  
   //{ category: 'Milk Shake',
   //  name: 'Milk Shake',
   //  group: 2,
@@ -245,39 +247,61 @@ export const allItems = [
 
 
   //GROUP 3
-  //{ category: 'PreOrder Bilao',
-  //  name: 'Palabok',
-  //  group: 3,
-  //  variants: {
-  //    'Small': {price: 350},
-  //    'Medium': {price: 500},
-  //    'Large': {price: 750},
-  //    'XL': {price: 850} }},
-//
-  //{ category: 'PreOrder Bilao',
-  //  name: 'Spaghetti',
-  //  group: 3,
-  //  variants: {
-  //    'Small': {price: 350},
-  //    'Medium': {price: 500},
-  //    'Large': {price: 750},
-  //    'XL': {price: 850} }},
-//
-  //{ category: 'PreOrder Bilao',
-  //  name: 'Carbonara',
-  //  group: 3,
-  //  variants: {
-  //    'Small': {price: 350},
-  //    'Medium': {price: 500},
-  //    'Large': {price: 750},
-  //    'XL': {price: 850} }},
-//
-  //{ category: 'PreOrder Bilao',
-  //  name: 'Pansit Bihon',
-  //  group: 3,
-  //  variants: {
-  //    'Small': {price: 350},
-  //    'Medium': {price: 500},
-  //    'Large': {price: 750},
-  //    'XL': {price: 850} }},
+  { category: 'PreOrder Bilao',
+    name: 'Palabok',
+    group: 3,
+    variants: {
+      'Medium': {price: 500},
+      'Large': {price: 750},
+      'XL': {price: 850} }},
+  
+  { category: 'PreOrder Bilao',
+    name: 'Carbonara',
+    group: 3,
+    variants: {
+      'Medium': {price: 550},
+      'Large': {price: 800},
+      'XL': {price: 900} }},
 
+  { category: 'PreOrder Bilao',
+    name: 'Spaghetti',
+    group: 3,
+    variants: {
+      'Medium': {price: 600},
+      'Large': {price: 850},
+      'XL': {price: 950} }},
+
+  { category: 'PreOrder Bilao',
+    name: 'Pansit Bihon',
+    group: 3,
+    variants: {
+      'Medium': {price: 600},
+      'Large': {price: 850},
+      'XL': {price: 950} }},
+  
+  { category: 'PreOrder Bilao',
+    name: 'Chicken Fillet',
+    group: 3,
+    variants: {
+      'Small': {price: 300},
+      'Medium': {price: 550},
+      'Large': {price: 850},
+      'XL': {price: 1100} }},
+  
+  { category: 'PreOrder Bilao',
+    name: 'Chicken Wings',
+    group: 3,
+    variants: {
+      'Medium 30pcs': {price: 730},
+      'Large 40pcs': {price: 900},
+      'XL 50pcs': {price: 1100} }},
+  
+  { category: 'PreOrder Bilao',
+    name: 'Siomai',
+    group: 3,
+    variants: {
+      'Small 30pcs': {price: 250},
+      'Medium 50pcs': {price: 400},
+      'Large 75pcs': {price: 600},
+      'XL 100pcs': {price: 800} }},
+]
