@@ -17,7 +17,7 @@ export default function InitialView({}) {
 
   return (
     <div id="affiliates-table">
-    <table>
+    <table id="initial-table">
       <thead>
         <tr>
           <th></th>

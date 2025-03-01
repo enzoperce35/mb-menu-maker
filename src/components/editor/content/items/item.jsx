@@ -12,7 +12,7 @@ export default function Item({item, setVariantVisibility, variantsAreOpened}) {
 
   return (
     <>
-      <tr className={hasSingleVariant ? "hidden" : "menu-item"}>
+      <tr style={{backgroundColor: item.color}} className={hasSingleVariant ? "hidden" : "menu-item"}>
         <td className="item-name">
           <span>
             {name}
@@ -37,7 +37,7 @@ export default function Item({item, setVariantVisibility, variantsAreOpened}) {
         const [variantName, variantValue] = variant;
 
         return (
-          <Variants variantName={variantName} variantValue={variantValue} itemName={name} singleVariant={hasSingleVariant}/>
+          <Variants variantName={variantName} variantValue={variantValue} itemName={name} singleVariant={hasSingleVariant} color={item.color}/>
         )
       })}
     </>

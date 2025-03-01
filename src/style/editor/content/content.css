@@ -1,12 +1,17 @@
 @import "./toggleswitch.css";
 
 .menu-container {
-  background-color: antiquewhite;
+  background-color: rgb(184, 171, 236);
   width: 100%;
 }
 
 table {
   width: 100%;
+}
+
+table:not(#initial-table) {
+  background-color: black;
+  border: 2px solid;
 }
 
 td {
@@ -44,4 +49,9 @@ td {
 
 #edit-switch img {
   height: 4vh;
+}
+
+.void-item {
+  opacity: .20;
+  background-color: rgb(140, 140, 176);
 }

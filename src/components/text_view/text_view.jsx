@@ -10,8 +10,8 @@ const filteredAndSortedItems = () => {
     
   // Step 2: Remove items if any variant exists in localStorage
   filteredItems = filteredItems.filter(item =>
-    !Object.keys(item.variants).some(variant =>
-      localStorage.getItem(`${item.name}${variant}`)
+    Object.keys(item.variants).some(variant =>
+      !localStorage.getItem(`${item.name}${variant}`)
     )
   );
     
@@ -40,7 +40,7 @@ export default function TextView({}) {
   const [showToast, setShowToast] = useState(false);
   const items = filteredAndSortedItems().map(item => item.name)
   const text1 = 'AVAILABLE NOW!'
-  const orders = '📲 Order Pick-up or Online( Mb Castro ☝️)'
+  const orders = '📲 Order Online( Mb Castro ☝️) or Pick-up'
   const location = "📍 Blk 1 Lot 10, Judith Street, Sampaguita West"
   const payment = "💳 GCash Accepted"
   const delivery = "🚚 FREE Delivery! Min. order ₱100 (inside Sampaguita West) | ₱120 (outside)"

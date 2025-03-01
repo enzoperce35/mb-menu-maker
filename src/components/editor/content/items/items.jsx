@@ -4,9 +4,29 @@ import Item from "./item";
 
 const getItems = (group) => allItems.filter(item => item.group === group);
 
+  // return items that has at least one available item
+const getInitialVariantsDisplayed = () => {
+    let missingItems = [];
+  
+    allItems.forEach(item => {
+      if (item.group === 3) return; // Skip items in group 3
+  
+      const hasMissingVariant = Object.keys(item.variants).some(variantKey => {
+        const storageKey = `${item.name}${variantKey}`;
+        return !localStorage.getItem(storageKey);
+      });
+  
+      if (hasMissingVariant) {
+        missingItems.push(item.name);
+      }
+    });
+  
+    return missingItems;
+  };
+
 export default function Items({group, focus}) {
   const [menu, setMenu] = useState({items: getItems(group), updated: false});
-  const [variantsDisplayed, setVariantsDisplayed] = useState([]);
+  const [variantsDisplayed, setVariantsDisplayed] = useState(getInitialVariantsDisplayed);
 
   useEffect(() => {
     const handleStorageUpdate = () => {

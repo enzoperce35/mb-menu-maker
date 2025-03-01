@@ -1,8 +1,29 @@
+const lightColors = [
+  { "alice-blue": "#F0F8FF" },
+  { "baby-blue": "#89CFF0" },
+  { "powder-blue": "#B0E0E6" },
+  { "ivory": "#FFFFF0" },
+  { "beige": "#F5F5DC" },
+  { "old-lace": "#FDF5E6" },
+  { "seashell": "#FFF5EE" },
+  { "cornsilk": "#FFF8DC" },
+  { "floral-white": "#FFFAF0" },
+  { "ghost-white": "#F8F8FF" },
+  { "snow": "#FFFAFA" },
+  { "champagne": "#F7E7CE" },
+  { "apricot": "#FDD5B1" },
+  { "melon": "#FDBCB4" },
+  { "wheat": "#F5DEB3" },
+  { "blanched-almond": "#FFEBCD" },
+  { "pearl": "#EAE0C8" }
+];
+
 export const allItems = [
   // GROUP 1
   { category: 'Meals',
     name: 'Breaded Porkchop',
     display: true,
+    color: '#FFE4E1', //misty rose
     group: 1,
     variants: {
       'w/ BBQ sauce': {code: 'A1', price: 70, affiliate: ['Breaded porkchop']},
@@ -11,6 +32,7 @@ export const allItems = [
   { category: 'Meals',
     name: 'Burger Steak',
     display: true,
+    color: '#D8BFD8', //thistle
     group: 1,
     variants: {
       'in Mushroom Sauce': {code: 'A2', price: 80, affiliate: ['Beef patty']},
@@ -19,6 +41,7 @@ export const allItems = [
   { category: 'Meals',
     name: 'Chaofan',
     display: true,
+    color: '#B0C4DE', //light steel blue
     group: 1,
     variants: {
       'Solo': {code: 'F1', price: 60, affiliate: ['Chaofan']},
@@ -30,6 +53,7 @@ export const allItems = [
   { category: 'Meals',
     name: 'Rice Bowl',
     display: true,
+    color: '#FFE4B5', //moccasin
     group: 1,
     variants: {
       'w/ 5pcs Shanghai': {code: 'R1', price: 55, affiliate: ['Shanghai']},
@@ -39,6 +63,7 @@ export const allItems = [
   { category: 'Meals',
     name: 'Silog',
     display: true,
+    color: '#DB7093', //pale violet red
     group: 1,
     variants: {
       'Tapsilog': {code: '', price: 90},
@@ -50,6 +75,7 @@ export const allItems = [
   { category: 'Meals',
     name: 'Shanghai',
     display: true,
+    color: '#F5FFFA', //mint cream
     group: 1,
     variants: {
       '12pcs': {code: '', price: 85, affiliate: ['Shanghai']},
@@ -59,12 +85,14 @@ export const allItems = [
   { category: 'Meals',
     name: 'Chicken Fillet',
     display: true,
+    color: '#ADD8E6', //light blue
     group: 1,
     variants: { regular: {code: '', price: 90}, large: {code: '', price: 135} }},
 
   { category: 'Meals',
     name: 'Chicken Wings',
     display: true,
+    color: '#F0FFF0', //honey dew
     group: 1,
     variants: {
       '6pcs Honey Soy Garlic': {code: '', price: 145},
@@ -83,12 +111,14 @@ export const allItems = [
   { category: 'Meals',
     name: 'Chicken Pop Shots',
     display: true,
+    color: '#E0FFFF', //light cyan
     group: 1,
     variants: { regular: {code: '', price: 80},  spicy: {code: '', price: 80} }},
 
   { category: 'Extra',
     name: 'Extra',
     group: 1,
+    color: '#DDA0DD', //plum
     variants: {
       'Plain Rice': {price: 15},
       'Fried Rice': {price: 20},
@@ -102,6 +132,7 @@ export const allItems = [
   { category: 'Add-Ons',
     name: 'Add-Ons',
     group: 1,
+    color: '#FFB6C1', //light pink
     variants: {
       'Fried Egg': {price: 15},
       'Veggies': {price: 20} }},
@@ -110,6 +141,7 @@ export const allItems = [
   { category: 'Merienda',
     name: 'Beef Burger',
     display: true,
+    color: '#98FB98', //pale green
     group: 2,
     variants: {
       'Solo': {code: 'B1', price: 55, affiliate: ['Beef patty']},
@@ -121,6 +153,7 @@ export const allItems = [
   { category: 'Merienda',
     name: 'Chicken Burger',
     display: true,
+    color: '#FFF5EE', //sea shell
     group: 2,
     variants: {
       'Solo': {code: 'B1', price: 55, affiliate: ['Chicken patty']},
@@ -132,6 +165,7 @@ export const allItems = [
   { category: 'Merienda',
     name: 'Fries',
     display: true,
+    color: '#E6E6FA', //lavender
     group: 2,
     variants: {
       'Salt regular': {code: '', price: 35, affiliate: ['Fries']},
@@ -154,6 +188,7 @@ export const allItems = [
   { category: 'Merienda',
     name: 'Siomai',
     display: true,
+    color: '#ADD8E6', //light blue
     group: 2,
     variants: {
       'Steamed 6pcs': {price: 45, affiliate: ['Steamed siomai']},
@@ -169,6 +204,7 @@ export const allItems = [
     name: 'Pansit Bihon',
     display: true,
     group: 2,
+    color: '#FFDAB9', //peach puff
     variants: {
       'Solo': {price: 65, affiliate: ['Bihon']},
       'w/ 2pcs puto': {price: 75, affiliate: ['Bihon', 'Puto']} }},
@@ -176,6 +212,7 @@ export const allItems = [
   { category: 'Merienda',
     name: 'Palabok',
     display: true,
+    color: '#98FB98', //light green
     group: 2,
     variants: {
       'Solo': {price: 65, affiliate: ['Palabok']},
@@ -184,6 +221,7 @@ export const allItems = [
   { category: 'Merienda',
     name: 'Spaghetti',
     display: true,
+    color: '#FFF0F5', //lavender blush
     group: 2,
     variants: {
       'Solo': {price: 65, affiliate: ['Spaghetti']},
@@ -192,6 +230,7 @@ export const allItems = [
   { category: 'Merienda',
     name: 'Carbonara',
     display: true,
+    color: '#FFA07A', //light salmon
     group: 2,
     variants: {
       'Solo': {price: 65, affiliate: ['Carbonara']},
@@ -200,18 +239,21 @@ export const allItems = [
   { category: 'Merienda',
     name: 'Empanada',
     display: true,
+    color: '#FFFACD', //lemon chiffon
     group: 2,
     variants: { '5pcs': {price: 100},  '10pcs': {price: 190} }},
 
   { category: 'Merienda',
     name: 'Maruya',
     display: true,
+    color: '#F0FFFF', //azure
     group: 2,
     variants: { regular: {price: 50}, bites: {price: 120} }},
 
   { category: 'Merienda',
     name: 'Puto',
     group: 2,
+    color: '#E6E6FA', //light lavender
     variants: {
       'Medium': {price: 8, affiliate: ['Puto']},
       'Regular': {price: 13, affiliate: ['Puto']},
@@ -220,6 +262,7 @@ export const allItems = [
   { category: 'Beverages',
     name: 'Beverages',
     group: 2,
+    color: '#FFDEAD', //navajo white
     variants: {
       'Bottled Water 350ml': {price: 10},
       'Coke Mismo': {price: 20},
@@ -231,6 +274,7 @@ export const allItems = [
   { category: 'Extra',
     name: 'Extra',
     group: 2,
+    color: '#FAFAD2', //light goldenrod
     variants: {
       'Salted Fries (60g)': {price: 25, affiliate: ['Fries']},
       'coleslaw': {price: 20} }},
@@ -248,7 +292,7 @@ export const allItems = [
 
   //GROUP 3
   { category: 'PreOrder Bilao',
-    name: 'Palabok',
+    name: 'Palabok Bilao',
     group: 3,
     variants: {
       'Medium': {price: 500},
@@ -256,7 +300,7 @@ export const allItems = [
       'XL': {price: 850} }},
   
   { category: 'PreOrder Bilao',
-    name: 'Carbonara',
+    name: 'Carbonara Bilao',
     group: 3,
     variants: {
       'Medium': {price: 550},
@@ -264,7 +308,7 @@ export const allItems = [
       'XL': {price: 900} }},
 
   { category: 'PreOrder Bilao',
-    name: 'Spaghetti',
+    name: 'Spaghetti Bilao',
     group: 3,
     variants: {
       'Medium': {price: 600},
@@ -272,7 +316,7 @@ export const allItems = [
       'XL': {price: 950} }},
 
   { category: 'PreOrder Bilao',
-    name: 'Pansit Bihon',
+    name: 'Pansit Bihon Bilao',
     group: 3,
     variants: {
       'Medium': {price: 600},
@@ -280,7 +324,7 @@ export const allItems = [
       'XL': {price: 950} }},
   
   { category: 'PreOrder Bilao',
-    name: 'Chicken Fillet',
+    name: 'Chicken Fillet Bilao',
     group: 3,
     variants: {
       'Small': {price: 300},
@@ -289,7 +333,7 @@ export const allItems = [
       'XL': {price: 1100} }},
   
   { category: 'PreOrder Bilao',
-    name: 'Chicken Wings',
+    name: 'Chicken Wings Bilao',
     group: 3,
     variants: {
       'Medium 30pcs': {price: 730},
@@ -297,7 +341,7 @@ export const allItems = [
       'XL 50pcs': {price: 1100} }},
   
   { category: 'PreOrder Bilao',
-    name: 'Siomai',
+    name: 'Siomai Bilao',
     group: 3,
     variants: {
       'Small 30pcs': {price: 250},

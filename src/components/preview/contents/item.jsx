@@ -37,7 +37,7 @@ export default function Item({group, focus}) {
         return (
           <div className={focus === group ? "preview-item" : "hidden"} >
             <h4 className={(showableItems === 1 && itemShowable) ? "preview-category" : "hidden"}>
-              {item.name}
+              {item.name.replace(/ bilao/i, '')}
             </h4>
 
             { variants.map(variant => (
