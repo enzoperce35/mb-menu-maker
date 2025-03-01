@@ -15,7 +15,8 @@ const lightColors = [
   { "melon": "#FDBCB4" },
   { "wheat": "#F5DEB3" },
   { "blanched-almond": "#FFEBCD" },
-  { "pearl": "#EAE0C8" }
+  { "pearl": "#EAE0C8" },
+  { "pale green": "#98FB98" }
 ];
 
 export const allItems = [
@@ -23,7 +24,7 @@ export const allItems = [
   { category: 'Meals',
     name: 'Breaded Porkchop',
     display: true,
-    color: '#FFE4E1', //misty rose
+    color: '#F0FFF0', //honey dew
     group: 1,
     variants: {
       'w/ BBQ sauce': {code: 'A1', price: 70, affiliate: ['Breaded porkchop']},
@@ -66,11 +67,11 @@ export const allItems = [
     color: '#DB7093', //pale violet red
     group: 1,
     variants: {
-      'Tapsilog': {code: '', price: 90},
-      'Porksilog': {code: '', price: 90, affiliate: ['Breaded porkchop']},
-      'Cornsilog': {code: '', price: 80},
-      'Malingsilog': {code: '',price: 70},
-      'Hotsilog': {code: '',price: 70} }},
+      'Tapsilog': {price: 90},
+      'Porksilog': {price: 90, affiliate: ['Breaded porkchop']},
+      'Cornsilog': {price: 80},
+      'Malingsilog': {price: 70},
+      'Hotsilog': {price: 70} }},
 
   { category: 'Meals',
     name: 'Shanghai',
@@ -78,42 +79,42 @@ export const allItems = [
     color: '#F5FFFA', //mint cream
     group: 1,
     variants: {
-      '12pcs': {code: '', price: 85, affiliate: ['Shanghai']},
-      '24pcs': {code: '', price: 170, affiliate: ['Shanghai']},
-      '36pcs': {code: '', price: 250, affiliate: ['Shanghai']} }},
+      '12pcs': {price: 85, affiliate: ['Shanghai']},
+      '24pcs': {price: 170, affiliate: ['Shanghai']},
+      '36pcs': {price: 250, affiliate: ['Shanghai']} }},
 
   { category: 'Meals',
     name: 'Chicken Fillet',
     display: true,
     color: '#ADD8E6', //light blue
     group: 1,
-    variants: { regular: {code: '', price: 90}, large: {code: '', price: 135} }},
+    variants: { regular: {price: 90}, large: {price: 135} }},
 
   { category: 'Meals',
     name: 'Chicken Wings',
     display: true,
-    color: '#F0FFF0', //honey dew
+    color: '#FFE4E1', //misty rose
     group: 1,
     variants: {
-      '6pcs Honey Soy Garlic': {code: '', price: 145},
-      '6pcs Buffalo': {code: '', price: 145},
-      '6pcs Orange': {code: '', price: 145},
-      '6pcs Assorted': {code: '', price: 145},
-      '10pcs Honey Soy Garlic': {code: '', price: 235},
-      '10pcs Buffalo': {code: '', price: 235},
-      '10pcs Orange': {code: '', price: 235},
-      '10pcs Assorted': {code: '', price: 235},
-      '20pcs Honey Soy Garlic': {code: '', price: 450},
-      '20pcs Buffalo': {code: '', price: 450},
-      '20pcs Orange': {code: '', price: 450},
-      '20pcs Assorted': {code: '', price: 450} }},
+      '6pcs Honey Soy Garlic': {price: 145},
+      '6pcs Buffalo': {price: 145},
+      '6pcs Orange': {price: 145},
+      '6pcs Assorted': {price: 145},
+      '10pcs Honey Soy Garlic': {price: 235},
+      '10pcs Buffalo': {price: 235},
+      '10pcs Orange': {price: 235},
+      '10pcs Assorted': {price: 235},
+      '20pcs Honey Soy Garlic': {price: 450},
+      '20pcs Buffalo': {price: 450},
+      '20pcs Orange': {price: 450},
+      '20pcs Assorted': {price: 450} }},
 
   { category: 'Meals',
     name: 'Chicken Pop Shots',
     display: true,
     color: '#E0FFFF', //light cyan
     group: 1,
-    variants: { regular: {code: '', price: 80},  spicy: {code: '', price: 80} }},
+    variants: { regular: {price: 80},  spicy: {price: 80} }},
 
   { category: 'Extra',
     name: 'Extra',
@@ -141,7 +142,7 @@ export const allItems = [
   { category: 'Merienda',
     name: 'Beef Burger',
     display: true,
-    color: '#98FB98', //pale green
+    color: '#FFA07A', //light salmon
     group: 2,
     variants: {
       'Solo': {code: 'B1', price: 55, affiliate: ['Beef patty']},
@@ -230,7 +231,7 @@ export const allItems = [
   { category: 'Merienda',
     name: 'Carbonara',
     display: true,
-    color: '#FFA07A', //light salmon
+    color: '"#FFF5EE', //sea shell
     group: 2,
     variants: {
       'Solo': {price: 65, affiliate: ['Carbonara']},
@@ -295,57 +296,57 @@ export const allItems = [
     name: 'Palabok Bilao',
     group: 3,
     variants: {
-      'Medium': {price: 500},
-      'Large': {price: 750},
-      'XL': {price: 850} }},
+      'Medium': {price: 500, pax: {max: 10}},
+      'Large': {price: 750, pax: {max: 15}},
+      'XL': {price: 850, pax: {max: 20}} }},
   
   { category: 'PreOrder Bilao',
     name: 'Carbonara Bilao',
     group: 3,
     variants: {
-      'Medium': {price: 550},
-      'Large': {price: 800},
-      'XL': {price: 900} }},
+      'Medium': {price: 550, pax: {max: 10}},
+      'Large': {price: 800, pax: {max: 15}},
+      'XL': {price: 900, pax: {max: 20}} }},
 
   { category: 'PreOrder Bilao',
     name: 'Spaghetti Bilao',
     group: 3,
     variants: {
-      'Medium': {price: 600},
-      'Large': {price: 850},
-      'XL': {price: 950} }},
+      'Medium': {price: 600, pax: {max: 10}},
+      'Large': {price: 850, pax: {max: 15}},
+      'XL': {price: 950, pax: {max: 20}} }},
 
   { category: 'PreOrder Bilao',
     name: 'Pansit Bihon Bilao',
     group: 3,
     variants: {
-      'Medium': {price: 600},
-      'Large': {price: 850},
-      'XL': {price: 950} }},
+      'Medium': {price: 600, pax: {max: 10}},
+      'Large': {price: 850, pax: {max: 15}},
+      'XL': {price: 950, pax: {max: 20}} }},
   
   { category: 'PreOrder Bilao',
     name: 'Chicken Fillet Bilao',
     group: 3,
     variants: {
-      'Small': {price: 300},
-      'Medium': {price: 550},
-      'Large': {price: 850},
-      'XL': {price: 1100} }},
+      'Small': {price: 300, pax: {min: 5, max: 7}},
+      'Medium': {price: 550, pax: {min: 12, max: 15}},
+      'Large': {price: 850, pax: {min: 18, max: 22}},
+      'XL': {price: 1100, pax: {min: 25, max: 30}} }},
   
   { category: 'PreOrder Bilao',
     name: 'Chicken Wings Bilao',
     group: 3,
     variants: {
-      'Medium 30pcs': {price: 730},
-      'Large 40pcs': {price: 900},
-      'XL 50pcs': {price: 1100} }},
+      'Medium 30pcs': {price: 730, pax: {min: 7, max: 10}},
+      'Large 40pcs': {price: 900, pax: {min: 10, max: 14}},
+      'XL 50pcs': {price: 1100, pax: {min: 13, max: 18}} }},
   
   { category: 'PreOrder Bilao',
     name: 'Siomai Bilao',
     group: 3,
     variants: {
-      'Small 30pcs': {price: 250},
-      'Medium 50pcs': {price: 400},
-      'Large 75pcs': {price: 600},
-      'XL 100pcs': {price: 800} }},
+      'Small 30pcs': {price: 250, pax: {min: 6, max: 8}},
+      'Medium 50pcs': {price: 400, pax: {min: 10, max: 12}},
+      'Large 75pcs': {price: 600, pax: {min: 15, max: 18}},
+      'XL 100pcs': {price: 800, pax: {min: 20, max: 25}} }},
 ]

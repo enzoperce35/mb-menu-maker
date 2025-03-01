@@ -25,7 +25,7 @@ export default function Item({group, focus}) {
 
           if (variantIsAvailable) itemShowable = true;
 
-          variants.push({name: key, code: value.code, id: variantId, price: value.price, available: variantIsAvailable})
+          variants.push({name: key, code: value.code, id: variantId, price: value.price, pax: value.pax, available: variantIsAvailable})
         })
 
         if (!itemShowable) {
@@ -41,12 +41,15 @@ export default function Item({group, focus}) {
             </h4>
 
             { variants.map(variant => (
-
-              <div className={variant.available ? ( variant.code === undefined ? 'preview-variant-no-code' : 'preview-variant') : "hidden"}>
+              <div className={variant.available ? ( variant.code === undefined ? (group === 3 ? 'triple-column': 'preview-variant-no-code') : 'preview-variant') : "hidden"}>
                 <span className={variant.code === undefined ? 'hidden' : 'variant-code'}>{`${variant.code === undefined ? '~' : variant.code}`}</span>
 
                 <span>
-                  {`${(item.category === item.name) ? "" : item.name} ${(variant.name === item.name) ? "" : variant.name}`}
+                  {`${(variant.name === item.name) ? "" : variant.name}`}
+                </span>
+
+                <span className={group === 3 ? '' : 'hidden'}>
+                  {variant.pax?.min === undefined ? `${variant.pax?.max} pax` : `${variant.pax.min}-${variant.pax.max} pax`}
                 </span>
 
                 <span>{`${variant.price}`}</span>

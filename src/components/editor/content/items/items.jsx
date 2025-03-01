@@ -9,20 +9,20 @@ const getInitialVariantsDisplayed = () => {
     let missingItems = [];
   
     allItems.forEach(item => {
-      if (item.group === 3) return; // Skip items in group 3
+        if (item.group === 3) return; // Skip items in group 3
   
-      const hasMissingVariant = Object.keys(item.variants).some(variantKey => {
-        const storageKey = `${item.name}${variantKey}`;
-        return !localStorage.getItem(storageKey);
-      });
+        const storedVariantsCount = Object.keys(item.variants).filter(variantKey => {
+            const storageKey = `${item.name}${variantKey}`;
+            return localStorage.getItem(storageKey);
+        }).length;
   
-      if (hasMissingVariant) {
-        missingItems.push(item.name);
-      }
+        if (storedVariantsCount > 0 && storedVariantsCount < Object.keys(item.variants).length) {
+            missingItems.push(item.name);
+        }
     });
   
     return missingItems;
-  };
+};
 
 export default function Items({group, focus}) {
   const [menu, setMenu] = useState({items: getItems(group), updated: false});

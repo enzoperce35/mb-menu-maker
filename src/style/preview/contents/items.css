@@ -80,22 +80,18 @@
   grid-template-columns: 3fr .40fr;
 }
 
+.triple-column {
+  display: grid;
+  grid-template-columns: 3fr 2.5fr .40fr;
+} 
+
 .preview-variant :last-child,
 .preview-variant-no-code :last-child {
   justify-self: end;
 }
 
-.variant-schedule {
-  border: 2px solid maroon;
-  border-radius: 3px;
-  padding: 0 4px;
-  font-size: smaller;
-  font-weight: bolder;
-  margin-left: 5px;
-  background-image: linear-gradient(to top left, rgb(238, 148, 14), rgb(248, 227, 201));
-}
-
 .preview-variant > :first-child,
+.triple-column,
 .preview-variant-no-code > :nth-child(2) {
   margin-left: 10px;
 }
