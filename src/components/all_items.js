@@ -157,11 +157,11 @@ export const allItems = [
     color: '#FFF5EE', //sea shell
     group: 2,
     variants: {
-      'Solo': {code: 'B1', price: 55, affiliate: ['Chicken patty']},
-      'w/ Fries': {code: 'B2', price: 75, affiliate: ['Chicken patty', 'Fries']},
-      'w/ Spaghetti': {code: 'B3', price: 90, affiliate: ['Chicken patty', 'Spaghetti']},
-      'w/ Carbonara': {code: 'B4',price: 90, affiliate: ['Chicken patty', 'Carbonara']},
-      'w/ Palabok': {code: 'B5',price: 90, affiliate: ['Chicken patty', 'Palabok']} }},
+      'Solo': {code: 'C1', price: 55, affiliate: ['Chicken patty']},
+      'w/ Fries': {code: 'C2', price: 75, affiliate: ['Chicken patty', 'Fries']},
+      'w/ Spaghetti': {code: 'C3', price: 90, affiliate: ['Chicken patty', 'Spaghetti']},
+      'w/ Carbonara': {code: 'C4',price: 90, affiliate: ['Chicken patty', 'Carbonara']},
+      'w/ Palabok': {code: 'C5',price: 90, affiliate: ['Chicken patty', 'Palabok']} }},
 
   { category: 'Merienda',
     name: 'Fries',
@@ -323,6 +323,15 @@ export const allItems = [
       'Medium': {price: 600, pax: {max: 10}},
       'Large': {price: 850, pax: {max: 15}},
       'XL': {price: 950, pax: {max: 20}} }},
+  
+  { category: 'PreOrder Bilao',
+    name: 'Puto Bilao',
+    group: 3,
+    variants: {
+      'Small 25pcs': {price: 200, pax: {min: 10, max: 12}},
+      'Medium 40pcs': {price: 300, pax: {min: 20, max: 25}},
+      'Large 50pcs': {price: 380, pax: {min: 25, max: 30}},
+      'XL 75pcs': {price: 550, pax: {min:30, max: 40}} }},
   
   { category: 'PreOrder Bilao',
     name: 'Chicken Fillet Bilao',
