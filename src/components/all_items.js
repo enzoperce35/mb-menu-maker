@@ -330,8 +330,8 @@ export const allItems = [
     variants: {
       'Small 25pcs': {price: 200, pax: {min: 10, max: 12}},
       'Medium 40pcs': {price: 300, pax: {min: 20, max: 25}},
-      'Large 50pcs': {price: 380, pax: {min: 25, max: 30}},
-      'XL 75pcs': {price: 550, pax: {min:30, max: 40}} }},
+      'Large 50pcs': {price: 370, pax: {min: 25, max: 30}},
+      'XL 75pcs': {price: 520, pax: {min:30, max: 40}} }},
   
   { category: 'PreOrder Bilao',
     name: 'Chicken Fillet Bilao',
