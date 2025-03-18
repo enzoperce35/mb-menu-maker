@@ -11,40 +11,16 @@
 }
 
 #preview-brand {
-  /* background-image: linear-gradient(to top left, rgb(238, 148, 14), rgb(248, 227, 201)); */
-  /* background-image: linear-gradient(to top left, #FFEB61, #F6F7F9); */
-  background-image: linear-gradient(to top left,#F7D655, #F7EAD4);
   position: relative;
-  box-shadow: 0 4px 15px -5px black;
+  background-image: url('../../../assets/images/Banners/mb-banner1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid rgba(103, 55, 91, 0.5); /* Light grayish-black with 20% opacity */
 }
 
-.brand-corners {
-  position: absolute;
-  height: 75%;
-}
-
-#corner-left {
-  transform: scale(-1, -1);
-  top: 0;
-  left: 0;
-}
-
-#corner-right {
-  bottom: 0;
-  right: 0;
-}
-
-#preview-brand h5 {
-  width: fit-content;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
-  font-family: 'Brand';
-  font-size: 1.6em;
-  font-weight: bolder;
-}
 
 #print-button {
   position: absolute;

@@ -1,8 +1,7 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import html2canvas from "html2canvas";
 import Item from "./item";
 import {default as downloadIcon} from "../../../assets/icons/download_icon.svg";
-import {default as brandCorner} from "../../../assets/icons/brand_corner.png";
 
 export default function Contents({focus, group}) {
   const printRef = useRef();
@@ -27,15 +26,10 @@ export default function Contents({focus, group}) {
   };
 
   return (
-    <div ref={printRef} className={focus === group ? "preview-content" : "hidden"}>
+    <div ref={printRef} className={focus === group ? "preview-content" : "hidden"} style={{ backgroundImage: group === 3 ? "linear-gradient(to top right, #cfc9d3, #f6f2c2)" : "linear-gradient(to top right, #73ca09, #50a410)" }}>
       <div id="preview-left" >
         <div id="preview-brand">
-          <img src={brandCorner} className={'brand-corners'} id={"corner-left"} ></img>
-          <img src={brandCorner} className={'brand-corners'} id={"corner-right"} ></img>
-
           <img src={downloadIcon} data-html2canvas-ignore={true} id={"print-button"} onClick={handleDownloadImage}></img>
-
-          <h5>Ma' donna</h5>
         </div>
 
         <div className="preview-items">
