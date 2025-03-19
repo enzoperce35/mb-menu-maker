@@ -26,9 +26,9 @@ export default function Contents({focus, group}) {
   };
 
   return (
-    <div ref={printRef} className={focus === group ? "preview-content" : "hidden"} style={{ backgroundImage: group === 3 ? "linear-gradient(to top right, #cfc9d3, #f6f2c2)" : "linear-gradient(to top right, #73ca09, #50a410)" }}>
-      <div id="preview-left" >
-        <div id="preview-brand">
+    <div ref={printRef} className={focus === group ? "preview-content" : "hidden"} style={{ backgroundImage: group === 3 ? "linear-gradient(to top right, #cfc9d3, #f6f2c2)" : "linear-gradient(to top right, #96f226, #439207)" }}>
+    <div id={group === 3 ? "preview-left-2" : "preview-left"} >
+        <div id={group === 3 ? "preview-brand-2": "preview-brand" }>
           <img src={downloadIcon} data-html2canvas-ignore={true} id={"print-button"} onClick={handleDownloadImage}></img>
         </div>
 
