@@ -20,8 +20,8 @@
 
 #container {
   margin: auto;
-  width: 30em;
-  max-width: 30em;
+  width: 32em;
+  max-width: 32em;
   grid-template-rows: auto auto;
 }
 
