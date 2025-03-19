@@ -35,14 +35,14 @@
   min-height: 50vh;
   max-height: max-content;
   display: grid;
-  grid-template-rows: 20vh auto;
+  grid-template-rows: 14vh auto;
 }
 
 #preview-left-2 {
   min-height: 50vh;
   max-height: max-content;
   display: grid;
-  grid-template-rows: 24vh auto;
+  grid-template-rows: 17vh auto;
 }
 
 .preview-items {
