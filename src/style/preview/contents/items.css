@@ -35,7 +35,7 @@
   min-height: 50vh;
   max-height: max-content;
   display: grid;
-  grid-template-rows: 14vh auto;
+  grid-template-rows: 15vh auto;
 }
 
 #preview-left-2 {

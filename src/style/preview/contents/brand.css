@@ -12,7 +12,7 @@
 
 #preview-brand {
   position: relative;
-  background-image: url('../../../assets/images/Banners/mb-logo-green.jpg');
+  background-image: url('../../../assets/images/Banners/mb-logo-warm-golden-yellow.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,7 +31,6 @@
   height: 100%;
   border-bottom: 2px solid rgba(103, 55, 91, 0.5); /* Light grayish-black with 20% opacity */
 }
-
 
 #print-button {
   position: absolute;
