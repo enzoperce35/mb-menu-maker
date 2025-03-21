@@ -1,62 +1,70 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { allItems } from "../../../all_items";
 import Item from "./item";
 
-const getItems = (group) => allItems.filter(item => item.group === group);
-
-  // return items that has at least one available item
-const getInitialVariantsDisplayed = () => {
-    let missingItems = [];
-  
-    allItems.forEach(item => {
-        if (item.group === 3) return; // Skip items in group 3
-  
-        const storedVariantsCount = Object.keys(item.variants).filter(variantKey => {
-            const storageKey = `${item.name}${variantKey}`;
-            return localStorage.getItem(storageKey);
-        }).length;
-  
-        if (storedVariantsCount > 0 && storedVariantsCount < Object.keys(item.variants).length) {
-            missingItems.push(item.name);
-        }
-    });
-  
-    return missingItems;
-};
-
-export default function Items({group, focus}) {
-  const [menu, setMenu] = useState({items: getItems(group), updated: false});
-  const [variantsDisplayed, setVariantsDisplayed] = useState(getInitialVariantsDisplayed);
+export default function Items({ group, focus }) {
+  const items = useMemo(() => allItems.filter(item => item.group === group), [group]);
+  const [menu, setMenu] = useState({ items, updated: false });
+  const [variantsDisplayed, setVariantsDisplayed] = useState([]);
+  const [openedVariantsCount, setOpenedVariantsCount] = useState(() => {
+      return Object.fromEntries(items.map(item => [item.name, 0])); // Initialize all items with 0 openedVariants
+  });
 
   useEffect(() => {
     const handleStorageUpdate = () => {
-      setMenu({...menu, updated: true})
-    };
-
+      setMenu(prevMenu => ({ ...prevMenu, updated: !prevMenu.updated }));
+    }
+    
     window.addEventListener("localStorageUpdate", handleStorageUpdate);
-
+    
     return () => window.removeEventListener("localStorageUpdate", handleStorageUpdate);
   }, []);
 
-  // collected items were to be closed in the menu
   const setVariantVisibility = (item) => {
-    if (variantsDisplayed.includes(item)) {
-      setVariantsDisplayed(openedItems => openedItems.filter(i => item !== i))  //delete: open item variant
-    } else {
-      setVariantsDisplayed(openedItems => [...openedItems, item])  //add: close item variant
-    }
-  }
+    setVariantsDisplayed(prev =>
+      prev.includes(item) ? prev.filter(i => i !== item) : [...prev, item]
+    );
+  };
+
+  const handleOpenedVariantsChange = (itemName, count) => {
+    setOpenedVariantsCount(prev => ({ ...prev, [itemName]: count }));
+  };
 
   return (
-    <tbody className={focus === group ? "menu-container" : "hidden"}>
-      {Object.entries(menu.items).map((item) => {
-        const [_, value] = item;
-        const variantsAreOpened = variantsDisplayed.includes(value.name)
-              
-        return (
-          <Item item={value} setVariantVisibility={setVariantVisibility} variantsAreOpened={variantsAreOpened}/>
-        )
-      })}
-    </tbody>
-  )
+    <>
+      {/* Items with at least 1 available variant */}
+      <tbody className={focus === group ? "menu-container" : "hidden"}>
+        {menu.items
+          .filter(item => (openedVariantsCount[item.name] || 0) > 0)
+          .map((item) => (
+            <Item
+              key={item.name}
+              item={item}
+              setVariantVisibility={setVariantVisibility}
+              variantsAreDropped={variantsDisplayed.includes(item.name)}
+              onOpenedVariantsChange={handleOpenedVariantsChange}
+              available={true}
+            />
+          ))
+        }
+      </tbody>
+
+      {/* Items without available variant */}
+      <tbody className={focus === group ? "menu-container" : "hidden"}>
+        {menu.items
+          .filter(item => (openedVariantsCount[item.name] || 0) === 0)
+          .map((item) => (
+            <Item
+              key={item.name}
+              item={item}
+              setVariantVisibility={setVariantVisibility}
+              variantsAreDropped={variantsDisplayed.includes(item.name)}
+              onOpenedVariantsChange={handleOpenedVariantsChange}
+              available={false}
+            />
+          ))
+        }
+      </tbody>
+    </>
+  );
 }

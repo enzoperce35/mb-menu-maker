@@ -1,0 +1,20 @@
+{
+  "name": "MB Menu Maker",
+  "short_name": "Menu Maker",
+  "icons": [
+    {
+      "src": "/src/assets/public/menu-img.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/src/assets/public/menu-img.png",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
+}

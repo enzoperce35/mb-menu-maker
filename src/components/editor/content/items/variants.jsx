@@ -1,11 +1,11 @@
 import ToggleSwitch from "../toggleswitch";
 
-export default function Variants({variantName, variantValue, itemName, singleVariant, color}) {
+export default function Variants({variantName, variantValue, itemName, singleVariant, itemAvailable}) {
   const variantId = `${itemName}${variantName}`;
   const variantIsAvailable = localStorage.getItem(variantId) === null;
 
   return (
-    <tr style={{backgroundColor: color}} key={variantId} className={"menu-item"}>
+    <tr style={{backgroundColor: itemAvailable ? "#F0FFF0" : "#FFF5EE"}} key={variantId} className={"menu-item"}>
       <td className={singleVariant ? '' : 'multi-variant'}>
         {variantName}
       </td>
