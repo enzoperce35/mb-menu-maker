@@ -297,7 +297,7 @@ export const allItems = [
     group: 3,
     variants: {
       'Medium': {price: 500, pax: {max: 10}},
-      'Large': {price: 750, pax: {max: 15}},
+      'Large': {price: 700, pax: {max: 15}},
       'XL': {price: 850, pax: {max: 20}} }},
   
   { category: 'PreOrder Bilao',
@@ -305,15 +305,15 @@ export const allItems = [
     group: 3,
     variants: {
       'Medium': {price: 550, pax: {max: 10}},
-      'Large': {price: 800, pax: {max: 15}},
-      'XL': {price: 900, pax: {max: 20}} }},
+      'Large': {price: 750, pax: {max: 15}},
+      'XL': {price: 950, pax: {max: 20}} }},
 
   { category: 'PreOrder Bilao',
     name: 'Spaghetti Bilao',
     group: 3,
     variants: {
-      'Medium': {price: 600, pax: {max: 10}},
-      'Large': {price: 850, pax: {max: 15}},
+      'Medium': {price: 550, pax: {max: 10}},
+      'Large': {price: 750, pax: {max: 15}},
       'XL': {price: 950, pax: {max: 20}} }},
 
   { category: 'PreOrder Bilao',
@@ -322,7 +322,7 @@ export const allItems = [
     variants: {
       'Medium': {price: 600, pax: {max: 10}},
       'Large': {price: 850, pax: {max: 15}},
-      'XL': {price: 950, pax: {max: 20}} }},
+      'XL': {price: 1050, pax: {max: 20}} }},
   
   { category: 'PreOrder Bilao',
     name: 'Puto Bilao',
@@ -331,7 +331,7 @@ export const allItems = [
       'Small 25pcs': {price: 200, pax: {min: 10, max: 12}},
       'Medium 40pcs': {price: 300, pax: {min: 20, max: 25}},
       'Large 50pcs': {price: 370, pax: {min: 25, max: 30}},
-      'XL 75pcs': {price: 520, pax: {min:30, max: 40}} }},
+      'XL 75pcs': {price: 550, pax: {min:30, max: 40}} }},
   
   { category: 'PreOrder Bilao',
     name: 'Chicken Fillet Bilao',
