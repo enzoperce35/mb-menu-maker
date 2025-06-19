@@ -122,7 +122,7 @@ export const allItems = [
     color: '#DDA0DD', //plum
     variants: {
       'Plain Rice': {price: 15},
-      'Fried Rice': {price: 20},
+      'Fried Rice': {price: 25},
       'gravy sauce': {price: 20},
       'gravy mushroom sauce': {price: 20},
       'bbq sauce': {price: 20},
