@@ -45,11 +45,11 @@ export const allItems = [
     color: '#B0C4DE', //light steel blue
     group: 1,
     variants: {
-      'Solo': {code: 'F1', price: 60, affiliate: ['Chaofan']},
-      'w/ 4pcs Steamed Siomai': {code: 'F2', price: 90, affiliate: ['Chaofan', 'Steamed siomai']},
-      'w/ 4pcs Fried Siomai': {code: 'F3', price: 90, affiliate: ['Chaofan', 'Fried siomai']},
-      'w/ Breaded Porkchop': {code: 'F4', price: 100, affiliate: ['Chaofan', 'Breaded porkchop']},
-      'w/ 4pcs Shanghai': {code: 'F5', price: 90, affiliate: ['Chaofan', 'Shanghai']} }},
+      'Solo': {code: 'F1', price: 70, affiliate: ['Chaofan']},
+      'w/ 4pcs Steamed Siomai': {code: 'F2', price: 100, affiliate: ['Chaofan', 'Steamed siomai']},
+      'w/ 4pcs Fried Siomai': {code: 'F3', price: 100, affiliate: ['Chaofan', 'Fried siomai']},
+      'w/ Breaded Porkchop': {code: 'F4', price: 115, affiliate: ['Chaofan', 'Breaded porkchop']},
+      'w/ 5pcs Shanghai': {code: 'F5', price: 100, affiliate: ['Chaofan', 'Shanghai']} }},
 
   { category: 'Meals',
     name: 'Rice Bowl',
@@ -67,11 +67,11 @@ export const allItems = [
     color: '#DB7093', //pale violet red
     group: 1,
     variants: {
-      'Tapsilog': {price: 90},
-      'Porksilog': {price: 90, affiliate: ['Breaded porkchop']},
-      'Cornsilog': {price: 80},
-      'Malingsilog': {price: 70},
-      'Hotsilog': {price: 70} }},
+      'Tapsilog': {price: 95},
+      'Porksilog': {price: 95, affiliate: ['Breaded porkchop']},
+      'Cornsilog': {price: 85},
+      'Malingsilog': {price: 75},
+      'Hotsilog': {price: 75} }},
 
   { category: 'Meals',
     name: 'Shanghai',
@@ -88,7 +88,7 @@ export const allItems = [
     display: true,
     color: '#ADD8E6', //light blue
     group: 1,
-    variants: { regular: {price: 90}, large: {price: 135} }},
+    variants: { regular: {price: 100}, large: {price: 145} }},
 
   { category: 'Meals',
     name: 'Chicken Wings',
@@ -135,7 +135,7 @@ export const allItems = [
     group: 1,
     color: '#FFB6C1', //light pink
     variants: {
-      'Fried Egg': {price: 15},
+      'Fried Egg': {price: 20},
       'Veggies': {price: 20} }},
 
   // GROUP 2
@@ -157,7 +157,7 @@ export const allItems = [
     color: '#FFF5EE', //sea shell
     group: 2,
     variants: {
-      'Solo': {code: 'C1', price: 55, affiliate: ['Chicken patty']},
+      'Solo': {code: 'C1', price: 60, affiliate: ['Chicken patty']},
       'w/ Fries': {code: 'C2', price: 75, affiliate: ['Chicken patty', 'Fries']},
       'w/ Spaghetti': {code: 'C3', price: 90, affiliate: ['Chicken patty', 'Spaghetti']},
       'w/ Carbonara': {code: 'C4',price: 90, affiliate: ['Chicken patty', 'Carbonara']},
@@ -192,12 +192,12 @@ export const allItems = [
     color: '#ADD8E6', //light blue
     group: 2,
     variants: {
-      'Steamed 6pcs': {price: 45, affiliate: ['Steamed siomai']},
-      'Steamed 8pcs': {price: 60, affiliate: ['Steamed siomai']},
+      'Steamed 6pcs': {price: 50, affiliate: ['Steamed siomai']},
+      'Steamed 8pcs': {price: 65, affiliate: ['Steamed siomai']},
       'Steamed tub regular': {price: 100, affiliate: ['Steamed siomai']},
       'Steamed tub spicy': {price: 100, affiliate: ['Steamed siomai']},
-      'Fried 6pcs': {price: 45, affiliate: ['Fried siomai']},
-      'Fried 8pcs': {price: 60, affiliate: ['Fried siomai']} }},
+      'Fried 6pcs': {price: 50, affiliate: ['Fried siomai']},
+      'Fried 8pcs': {price: 65, affiliate: ['Fried siomai']} }},
     
     
 
@@ -337,10 +337,10 @@ export const allItems = [
     name: 'Chicken Fillet Bilao',
     group: 3,
     variants: {
-      'Small': {price: 300, pax: {min: 5, max: 7}},
-      'Medium': {price: 550, pax: {min: 12, max: 15}},
-      'Large': {price: 850, pax: {min: 18, max: 22}},
-      'XL': {price: 1100, pax: {min: 25, max: 30}} }},
+      'Small': {price: 320, pax: {min: 5, max: 7}},
+      'Medium': {price: 610, pax: {min: 12, max: 15}},
+      'Large': {price: 900, pax: {min: 18, max: 22}},
+      'XL': {price: 1200, pax: {min: 25, max: 30}} }},
   
   { category: 'PreOrder Bilao',
     name: 'Chicken Wings Bilao',
