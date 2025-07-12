@@ -158,10 +158,10 @@ export const allItems = [
     group: 2,
     variants: {
       'Solo': {code: 'C1', price: 60, affiliate: ['Chicken patty']},
-      'w/ Fries': {code: 'C2', price: 75, affiliate: ['Chicken patty', 'Fries']},
-      'w/ Spaghetti': {code: 'C3', price: 90, affiliate: ['Chicken patty', 'Spaghetti']},
-      'w/ Carbonara': {code: 'C4',price: 90, affiliate: ['Chicken patty', 'Carbonara']},
-      'w/ Palabok': {code: 'C5',price: 90, affiliate: ['Chicken patty', 'Palabok']} }},
+      'w/ Fries': {code: 'C2', price: 80, affiliate: ['Chicken patty', 'Fries']},
+      'w/ Spaghetti': {code: 'C3', price: 95, affiliate: ['Chicken patty', 'Spaghetti']},
+      'w/ Carbonara': {code: 'C4',price: 95, affiliate: ['Chicken patty', 'Carbonara']},
+      'w/ Palabok': {code: 'C5',price: 95, affiliate: ['Chicken patty', 'Palabok']} }},
 
   { category: 'Merienda',
     name: 'Fries',
