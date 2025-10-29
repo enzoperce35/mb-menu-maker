@@ -46,6 +46,7 @@ export default function Contents({ focus, group }) {
       group3: "linear-gradient(to top right, #B05E27, #FFD194)",
       other: "linear-gradient(to top right, #FAD6A5, #E2B07F)",
     },
+    
   };
 
   // 🌟 Select the active theme here
@@ -77,8 +78,8 @@ export default function Contents({ focus, group }) {
 
         <div className="preview-items">
           <h2>
-            <span>💖</span> {isGroup3 ? "Pre Order Bilao" : "Available Today"}{" "}
-            <span>💖</span>
+            <span>🎄</span> {isGroup3 ? "Pre Order Bilao" : "Available Today"}{" "}
+            <span>🎄</span>
           </h2>
 
           {[1, 2, 3].map((grp) => (
@@ -106,3 +107,5 @@ export default function Contents({ focus, group }) {
     </div>
   );
 }
+
+// 💖🎄 menu header icons
