@@ -78,8 +78,8 @@ export default function Contents({ focus, group }) {
 
         <div className="preview-items">
           <h2>
-            <span>🎄</span> {isGroup3 ? "Pre Order Bilao" : "Available Today"}{" "}
-            <span>🎄</span>
+            <span>💖</span> {isGroup3 ? "Pre Order Bilao" : "Available Today"}{" "}
+            <span>💖</span>
           </h2>
 
           {[1, 2, 3].map((grp) => (

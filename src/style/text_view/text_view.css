@@ -1,8 +1,23 @@
 #text-items {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* responsive 2-column layout */
+  gap: 1.5rem; /* spacing between items */
+  align-items: start;
+  margin-bottom: 2rem; /* space below the grid */
 }
 
 #copy-button {
-   padding-top: 10vh;
+  display: flex;
+  justify-content: center; /* center button horizontally */
+  margin-top: 2rem; /* reasonable spacing from the grid */
+}
+
+/* Optional: hover effect for the button */
+#copy-button button {
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#copy-button button:hover {
+  background-color: #2563eb; /* slightly darker blue */
+  transform: translateY(-2px);
 }
