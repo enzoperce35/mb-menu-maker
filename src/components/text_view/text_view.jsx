@@ -32,65 +32,69 @@ export default function TextView() {
   const [showToast, setShowToast] = useState(false);
   const items = filteredAndSortedItems().map(item => item.name);
 
-  const text1 = 'AVAILABLE NOW!';
-  const orders = '📲 Order Online( Mb Castro ☝️) or pick-up';
+  const header = 'AVAILABLE NOW!';
+  const orders = '📲 Order Online (Mb Castro ☝️) or pick-up';
   const location = "📍 Blk 1 Lot 10, Judith Street, Sampaguita West";
-  const text3 = "✨ THANK YOU! ✨";
-  const separationLine = "-------------------------";
+  const thanks = "✨ THANK YOU! ✨";
+  const separator = "-------------------------";
   const appLink = "https://order-po.netlify.app/products?shop_id=1";
 
   const copyToClipboard = () => {
     const itemTexts = items.map(item => `• ${item}`).join("\n");
 
-    const clipBoardText = 
-`${text1}
+    const clipboardText = 
+`${header}
 
 ${itemTexts}
 
-${separationLine}
+${separator}
 ${orders}
 ${location}
-${separationLine}
+${separator}
 
-🛒 For more products and advanced orders, check our app: Click here → ${appLink}
+🛒 For more products and advanced orders, check our app → ${appLink}
 
-${text3}`;
+${thanks}`;
 
-    navigator.clipboard.writeText(clipBoardText).then(() => {
+    navigator.clipboard.writeText(clipboardText).then(() => {
       setShowToast(true);
       setTimeout(() => setShowToast(false), 2000);
     });
   };
 
   return (
-    <div id="text-container" className="p-4">
-      <p className="font-bold">{text1}</p>
+    <div id="text-container" className="p-4 max-w-lg mx-auto">
+      {/* Header */}
+      <p className="font-bold text-xl mb-2">{header}</p>
 
-      <ul className="list-none p-0 mt-2 mb-4">
+      {/* Item list */}
+      <ul className="list-none p-0 mb-4">
         {items.map((item, index) => (
           <li key={index}>• {item}</li>
         ))}
       </ul>
 
       {/* Copy button */}
-      <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+      <div className="text-center mb-6">
         <button
           onClick={copyToClipboard}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
+          className="px-5 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
         >
           Copy to Clipboard
         </button>
       </div>
 
+      {/* Toast */}
       {showToast && (
         <div className="fixed bottom-5 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded shadow-lg">
           Copied to clipboard! ✅
         </div>
       )}
 
-      <p>{orders}</p>
-      <p>
-        🛒 For more products and advanced orders, check our app:{" "}
+      {/* On-screen links */}
+      <p className="mb-1">{orders}</p>
+      <p className="mb-4">
+        🛒 For more products and advanced orders, please check our app →{" "}
         <a
           href={appLink}
           target="_blank"
@@ -101,7 +105,7 @@ ${text3}`;
         </a>
       </p>
 
-      <p className="mt-4">{text3}</p>
+      <p className="mt-2">{thanks}</p>
     </div>
   );
 }
